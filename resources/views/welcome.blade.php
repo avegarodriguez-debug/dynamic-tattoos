@@ -62,7 +62,7 @@
         <x-landing.footer />
     </div>
 
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="{{ asset('js/lottie-player.js') }}"></script>
     @livewireScripts
 </body>
 </html>
