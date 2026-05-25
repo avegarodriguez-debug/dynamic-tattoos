@@ -50,16 +50,30 @@
           </ul>
         </div>
         <div class="social-icons" style="display:flex;gap:12px;align-items:center">
-        <a href="#" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.5A4.5 4.5 0 1016.5 13 4.5 4.5 0 0012 8.5zm6.2-2.1a1.1 1.1 0 11-1.1-1.1 1.1 1.1 0 011.1 1.1z"/></svg>
-        </a>
-        <a href="#" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 10-11.5 9.9v-7h-2.2v-2.9h2.2V9.3c0-2.2 1.3-3.5 3.3-3.5.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2v1.5h2.3l-.4 2.9h-1.9V22A10 10 0 0022 12z"/></svg>
-        </a>
-        <a href="#" class="social-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 2v11.5A4.5 4.5 0 1014.5 7H16V4h-3V2H9z"/></svg>
-        </a>
-      </div>
+          <a href="https://www.instagram.com/" class="social-link social-instagram" aria-label="Instagram (Instagram homepage)" target="_blank" rel="noopener noreferrer" title="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" role="img">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.4" fill="none"/>
+              <circle cx="12" cy="11.5" r="3.2" fill="currentColor"/>
+              <circle cx="17.5" cy="6.5" r="0.9" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/" class="social-link social-facebook" aria-label="Facebook (Facebook homepage)" target="_blank" rel="noopener noreferrer" title="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" role="img">
+              <path d="M15 3h-2.5C10 3 9 4 9 6v2H7v3h2v7h3v-7h2.2l.3-3H12V6.5c0-.6.2-1.5 1.5-1.5H15V3z"/>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/" class="social-link social-tiktok" aria-label="TikTok (TikTok homepage)" target="_blank" rel="noopener noreferrer" title="TikTok">
+            <!-- TikTok-like music note: layered (cyan/magenta/black) with rounded head and curved flag -->
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg">
+              <!-- cyan offset -->
+              <path d="M15.8 3.2v5.6c-1.0-.2-1.9-.6-2.7-1.1v6.1a3.4 3.4 0 1 1-1.6-2.9V6.6c.8.4 1.7.6 2.6.7V3.2h1.7z" fill="#69C9D0" transform="translate(-0.5,0.6)"/>
+              <!-- magenta offset -->
+              <path d="M15.8 3.2v5.6c-1.0-.2-1.9-.6-2.7-1.1v6.1a3.4 3.4 0 1 1-1.6-2.9V6.6c.8.4 1.7.6 2.6.7V3.2h1.7z" fill="#EE1D52" transform="translate(0.5,-0.4)"/>
+              <!-- main black -->
+              <path d="M15.8 3.2v5.6c-1.0-.2-1.9-.6-2.7-1.1v6.1a3.4 3.4 0 1 1-1.6-2.9V6.6c.8.4 1.7.6 2.6.7V3.2h1.7z" fill="#010101"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
     <div class="row">
@@ -72,7 +86,15 @@
 <?php include 'includes/contacto.php'; ?>
 <script src="js/contacto.js"></script>
 <style>
-  .social-link{color:inherit;opacity:.9;display:inline-flex;align-items:center;justify-content:center}
-  .social-link svg{display:block}
-  .social-link:hover{opacity:1;color:var(--red)}
+  .social-link{color:inherit;opacity:.95;display:inline-flex;align-items:center;justify-content:center;padding:6px;border-radius:8px;transition:transform .12s ease,color .12s ease,opacity .12s ease}
+  .social-link svg{display:block;width:20px;height:20px}
+  .social-link:hover{opacity:1;transform:translateY(-2px) scale(1.06)}
+  .social-instagram:hover{color:#E1306C}
+  .social-facebook:hover{color:#1877F2}
+  .social-tiktok:hover{color:#010101}
+  /* Ensure icons contrast on dark footers */
+  footer .social-link{color:rgba(255,255,255,0.95)}
+  footer .social-instagram:hover{color:#E1306C}
+  footer .social-facebook:hover{color:#1877F2}
+  footer .social-tiktok:hover{color:#ffffff}
 </style>

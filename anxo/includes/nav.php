@@ -8,27 +8,29 @@
       <img class="brand-logo brand-dark" src="assets/logo-nav-white.png" alt="" aria-hidden="true" />
     </a>
     <ul>
-      
-      <li><a href="index.php#concepto">Concepto</a></li>
-      <li><a href="index.php#demo">Demo</a></li>
-      <li><a href="index.php#tecnico">Técnico</a></li>
-      <li><a href="index.php#planes">Planes</a></li>
-      <li><a href="index.php#faq">FAQ</a></li>
+      <li><a href="index.php#concepto" data-i18n="nav.concept">Concepto</a></li>
+      <li><a href="index.php#demo" data-i18n="nav.demo">Demo</a></li>
+      <li><a href="index.php#tecnico" data-i18n="nav.tech">Técnico</a></li>
+      <li><a href="index.php#planes" data-i18n="nav.plans">Planes</a></li>
+      <li><a href="index.php#faq" data-i18n="nav.faq">FAQ</a></li>
     </ul>
     <div class="nav-controls" style="display:flex;align-items:center;gap:12px">
       <div class="lang-switcher" id="navLangSwitcher">
-        <button id="navLangBtn" class="lang-btn" aria-haspopup="true" aria-expanded="false" type="button">Español ▾</button>
+        <button id="navLangBtn" class="lang-btn" aria-haspopup="true" aria-expanded="false" type="button">
+          <span class="nav-flag" aria-hidden="true" style="display:inline-block;width:24px;height:16px;margin-right:8px;vertical-align:middle"></span>
+          <span class="nav-label">Español</span>&nbsp;▾
+        </button>
         <ul class="lang-menu" id="navLangMenu" role="menu" hidden>
-          <li role="none"><button role="menuitem" data-lang="en">🇬🇧 English</button></li>
-          <li role="none"><button role="menuitem" data-lang="zh">🇨🇳 中文 (简体)</button></li>
-          <li role="none"><button role="menuitem" data-lang="hi">🇮🇳 हिन्दी</button></li>
-          <li role="none"><button role="menuitem" data-lang="es">🇪🇸 Español</button></li>
-          <li role="none"><button role="menuitem" data-lang="ar">🇸🇦 العربية</button></li>
-          <li role="none"><button role="menuitem" data-lang="fr">🇫🇷 Français</button></li>
-          <li role="none"><button role="menuitem" data-lang="bn">🇧🇩 বাংলা</button></li>
-          <li role="none"><button role="menuitem" data-lang="ru">🇷🇺 Русский</button></li>
-          <li role="none"><button role="menuitem" data-lang="pt">🇵🇹 Português</button></li>
-          <li role="none"><button role="menuitem" data-lang="ur">🇵🇰 اردو</button></li>
+          <li role="none"><button role="menuitem" data-lang="en"><span class="flag-badge" aria-hidden="true">🇬🇧</span>English</button></li>
+          <li role="none"><button role="menuitem" data-lang="zh"><span class="flag-badge" aria-hidden="true">🇨🇳</span>中文 (简体)</button></li>
+          <li role="none"><button role="menuitem" data-lang="hi"><span class="flag-badge" aria-hidden="true">🇮🇳</span>हिन्दी</button></li>
+          <li role="none"><button role="menuitem" data-lang="es"><span class="flag-badge" aria-hidden="true">🇪🇸</span>Español</button></li>
+          <li role="none"><button role="menuitem" data-lang="ar"><span class="flag-badge" aria-hidden="true">🇸🇦</span>العربية</button></li>
+          <li role="none"><button role="menuitem" data-lang="fr"><span class="flag-badge" aria-hidden="true">🇫🇷</span>Français</button></li>
+          <li role="none"><button role="menuitem" data-lang="bn"><span class="flag-badge" aria-hidden="true">🇧🇩</span>বাংলা</button></li>
+          <li role="none"><button role="menuitem" data-lang="ru"><span class="flag-badge" aria-hidden="true">🇷🇺</span>Русский</button></li>
+          <li role="none"><button role="menuitem" data-lang="pt"><span class="flag-badge" aria-hidden="true">🇵🇹</span>Português</button></li>
+          <li role="none"><button role="menuitem" data-lang="ur"><span class="flag-badge" aria-hidden="true">🇵🇰</span>اردو</button></li>
         </ul>
       </div>
     </div>
@@ -64,14 +66,25 @@
 </div>
 
   <style>
-    /* Small nav language menu styles */
+    /* Nav language menu styles + mobile adjustments */
     .lang-switcher{position:relative}
-    .lang-btn{background:transparent;border:1px solid rgba(0,0,0,0.06);padding:6px 10px;border-radius:6px;color:inherit;cursor:pointer}
-    .lang-menu{position:absolute;right:0;top:calc(100% + 8px);list-style:none;margin:0;padding:6px 0;background:#fff;color:#111;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,0.12);min-width:170px;z-index:999}
+    .flag-badge{display:inline-block;min-width:20px;margin-right:8px;vertical-align:middle;font-size:18px;line-height:1;text-align:center;height:auto}
+    .flag-badge{font-family: 'Segoe UI Emoji', 'Noto Color Emoji', 'Apple Color Emoji', 'EmojiOne Mozilla', 'Twemoji Mozilla', system-ui, sans-serif}
+    .nav-flag svg,.flag-badge svg{width:24px;height:16px;display:block}
+    .nav-flag{display:inline-block;margin-right:8px;font-size:18px;line-height:1;text-align:center}
+    .lang-btn{background:transparent;border:1px solid rgba(0,0,0,0.06);padding:8px 12px;border-radius:8px;color:inherit;cursor:pointer;display:inline-flex;align-items:center;gap:8px;font-size:14px}
+    .lang-menu{position:absolute;right:0;top:calc(100% + 8px);list-style:none;margin:0;padding:6px 0;background:#fff;color:#111;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,0.12);min-width:220px;z-index:999;opacity:0;transform:translateY(-6px) scale(.98);transform-origin:top right;transition:opacity .18s ease,transform .18s ease;pointer-events:none}
+    .lang-menu.open{opacity:1;transform:translateY(0) scale(1);pointer-events:auto}
     .lang-menu li{margin:0}
-    .lang-menu li button{display:block;width:100%;padding:8px 12px;border:none;background:transparent;text-align:left;color:inherit;cursor:pointer}
+    .lang-menu li button{display:flex;align-items:center;width:100%;padding:10px 14px;border:none;background:transparent;text-align:left;color:inherit;cursor:pointer;font-size:14px}
     .lang-menu li button:hover{background:rgba(0,0,0,0.06)}
     .lang-menu[hidden]{display:none}
+
+    /* Mobile: make dropdown fixed and touch-friendly */
+    @media (max-width: 640px){
+      .lang-menu{position:fixed;left:12px;right:12px;top:64px;min-width:unset;border-radius:12px;max-height:calc(100vh - 100px);overflow:auto;transform-origin:top center}
+      .lang-btn{padding:10px 14px}
+    }
   </style>
 
   <script>
@@ -84,12 +97,55 @@
       const labels = { en: 'English', zh: '中文', hi: 'हिन्दी', es: 'Español', ar: 'العربية', fr: 'Français', bn: 'বাংলা', ru: 'Русский', pt: 'Português', ur: 'اردو' };
       function getSaved(){ return localStorage.getItem(KEY) || document.documentElement.lang || 'es'; }
       function save(lang){ localStorage.setItem(KEY, lang); }
-      function setLang(lang){ document.documentElement.lang = lang; btn.textContent = (labels[lang] || lang) + ' ▾'; save(lang); }
+      function setLang(lang){
+        document.documentElement.lang = lang;
+        save(lang);
+        // update button: clone flag from menu if present
+        const menuBtn = menu.querySelector(`button[data-lang="${lang}"]`);
+        const flag = menuBtn ? menuBtn.querySelector('.flag-badge') : null;
+        const label = labels[lang] || lang;
+        // clear and build
+        btn.innerHTML = '';
+        if(flag){
+          const navFlag = document.createElement('span'); navFlag.className = 'nav-flag';
+          navFlag.appendChild(flag.cloneNode(true));
+          navFlag.style.display = 'inline-block'; navFlag.style.width = '24px'; navFlag.style.height = '16px'; navFlag.style.marginRight = '8px';
+          btn.appendChild(navFlag);
+        }
+        const labelSpan = document.createElement('span'); labelSpan.className = 'nav-label'; labelSpan.textContent = label;
+        btn.appendChild(labelSpan);
+        btn.appendChild(document.createTextNode(' ▾'));
+      }
+      // Initialize
       setLang(getSaved());
-      btn.addEventListener('click', function(e){ const open = btn.getAttribute('aria-expanded') === 'true'; btn.setAttribute('aria-expanded', (!open).toString()); if(open){ menu.setAttribute('hidden',''); } else { menu.removeAttribute('hidden'); } });
-      menu.addEventListener('click', function(e){ const t = e.target.closest('button[data-lang]'); if(!t) return; const lang = t.getAttribute('data-lang'); setLang(lang); menu.setAttribute('hidden',''); btn.setAttribute('aria-expanded','false'); });
-      document.addEventListener('click', function(e){ if(!menu.contains(e.target) && !btn.contains(e.target)){ menu.setAttribute('hidden',''); btn.setAttribute('aria-expanded','false'); }});
-      document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ menu.setAttribute('hidden',''); btn.setAttribute('aria-expanded','false'); }});
+
+      // If Twemoji is available it will run above; otherwise keep native emoji glyphs.
+
+      // Toggle menu with proper event handling to avoid immediate close on mobile
+      btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        const open = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', (!open).toString());
+        if(open){ menu.classList.remove('open'); menu.setAttribute('hidden',''); }
+        else { menu.classList.add('open'); menu.removeAttribute('hidden'); }
+      });
+
+      // Menu click should not propagate to document
+      menu.addEventListener('click', function(e){
+        e.stopPropagation();
+        const t = e.target.closest('button[data-lang]');
+        if(!t) return;
+        const lang = t.getAttribute('data-lang');
+        setLang(lang);
+        menu.classList.remove('open'); menu.setAttribute('hidden',''); btn.setAttribute('aria-expanded','false');
+      });
+
+      // Close on outside click/touch
+      function hideMenu(){ menu.classList.remove('open'); menu.setAttribute('hidden',''); btn.setAttribute('aria-expanded','false'); }
+      document.addEventListener('click', function(e){ if(!menu.contains(e.target) && !btn.contains(e.target)) hideMenu(); });
+      document.addEventListener('touchstart', function(e){ if(!menu.contains(e.target) && !btn.contains(e.target)) hideMenu(); });
+      document.addEventListener('keydown', function(e){ if(e.key==='Escape') hideMenu(); });
+      window.addEventListener('resize', hideMenu);
     });
   })();
   </script>
