@@ -11,6 +11,13 @@
     "title":"Tu historia cambia<br/>cada segundo.<br/><span class=\"ev\">Tu tatuaje también</span>",
     "lede":"Fusionamos lo permanente del arte corporal con la libertad absoluta del universo digital. <strong>Un solo tatuaje en tu piel. Infinitas historias por contar.</strong>"
   },
+  "marquee":{
+    "item1":"Tinta inteligente",
+    "item2":"Sin láser · sin arrepentimientos",
+    "item3":"Infinitas historias por contar",
+    "item4":"Tu piel · tu canal",
+    "item5":"4 × 4 cm validado"
+  },
   "btn":{
     "primary":"Haz tu tatuaje dinámico","ghost":"Ver cómo funciona"
   },

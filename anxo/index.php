@@ -49,7 +49,7 @@
           Tu historia cambia<br/>cada segundo.<br/>
           <span class="ev">Tu tatuaje también<span class="pdot"></span></span>
         </h1>
-        <p class="hero-lede" data-i18n="hero.lede">
+        <p class="hero-lede" data-i18n-html="hero.lede">
           Fusionamos lo permanente del arte corporal con la libertad absoluta del universo digital.
           <strong>Un solo tatuaje en tu piel. Infinitas historias por contar.</strong>
         </p>

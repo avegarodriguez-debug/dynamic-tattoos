@@ -52,16 +52,16 @@
 <!-- Marquee -->
 <div class="marquee">
   <div class="marquee-track">
-    <span>Tinta inteligente</span>
-    <span>Sin láser · sin arrepentimientos</span>
-    <span>Infinitas historias por contar</span>
-    <span>Tu piel · tu canal</span>
-    <span>4 × 4 cm validado</span>
-    <span>Tinta inteligente</span>
-    <span>Sin láser · sin arrepentimientos</span>
-    <span>Infinitas historias por contar</span>
-    <span>Tu piel · tu canal</span>
-    <span>4 × 4 cm validado</span>
+    <span data-i18n="marquee.item1">Tinta inteligente</span>
+    <span data-i18n="marquee.item2">Sin láser · sin arrepentimientos</span>
+    <span data-i18n="marquee.item3">Infinitas historias por contar</span>
+    <span data-i18n="marquee.item4">Tu piel · tu canal</span>
+    <span data-i18n="marquee.item5">4 × 4 cm validado</span>
+    <span data-i18n="marquee.item1">Tinta inteligente</span>
+    <span data-i18n="marquee.item2">Sin láser · sin arrepentimientos</span>
+    <span data-i18n="marquee.item3">Infinitas historias por contar</span>
+    <span data-i18n="marquee.item4">Tu piel · tu canal</span>
+    <span data-i18n="marquee.item5">4 × 4 cm validado</span>
   </div>
 </div>
 

@@ -11,6 +11,13 @@
     "title":"Your story changes<br/>every second.<br/><span class=\"ev\">Your tattoo does too</span>",
     "lede":"We fuse the permanence of body art with the boundless freedom of the digital universe. <strong>One tattoo on your skin. Infinite stories to tell.</strong>"
   },
+  "marquee":{
+    "item1":"Smart ink",
+    "item2":"No laser · no regrets",
+    "item3":"Infinite stories to tell",
+    "item4":"Your skin · your channel",
+    "item5":"4 × 4 cm validated"
+  },
   "btn":{
     "primary":"Get your Dynamic Tattoo",
     "ghost":"See how it works"
