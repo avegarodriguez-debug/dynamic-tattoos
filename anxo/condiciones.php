@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="css/main.css">
 <?php include_once 'includes/nav.php'; ?>
 
 <section class="sec-head" data-theme="bone">

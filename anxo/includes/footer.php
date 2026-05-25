@@ -44,9 +44,9 @@
         <div class="foot-col">
           <h5>Legal</h5>
           <ul>
-            <li><a href="/terminos.php">Términos</a></li>
-            <li><a href="/privacidad.php">Privacidad</a></li>
-            <li><a href="/cookies.php">Cookies</a></li>
+            <li><a href="terminos.php">Términos</a></li>
+            <li><a href="privacidad.php">Privacidad</a></li>
+            <li><a href="cookies.php">Cookies</a></li>
           </ul>
         </div>
       </div>

@@ -1,20 +1,20 @@
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="css/main.css">
 <link rel="shortcut icon" href="logo.png" type="image/x-icon">
 <!-- NAV -->
 <nav class="top" id="topNav">
   <div class="wrap row">
-    <a class="brand" href="/" aria-label="Dynamic Tattoos">
+    <a class="brand" href="index.php" aria-label="Dynamic Tattoos">
       <img class="brand-logo brand-light" src="assets/logo-nav-black.png" alt="Dynamic Tattoos" />
       <img class="brand-logo brand-dark" src="assets/logo-nav-white.png" alt="" aria-hidden="true" />
     </a>
     <ul>
-      <li><a href="/#concepto">Concepto</a></li>
-      <li><a href="/#demo">Demo</a></li>
-      <li><a href="/#tecnico">Técnico</a></li>
-      <li><a href="/#planes">Planes</a></li>
-      <li><a href="/#faq">FAQ</a></li>
+      <li><a href="index.php#concepto">Concepto</a></li>
+      <li><a href="index.php#demo">Demo</a></li>
+      <li><a href="index.php#tecnico">Técnico</a></li>
+      <li><a href="index.php#planes">Planes</a></li>
+      <li><a href="index.php#faq">FAQ</a></li>
     </ul>
-    <a class="cta" href="/#planes">Reservar QR</a>
+    <a class="cta" href="index.php#planes">Reservar QR</a>
   </div>
 </nav>
 <!-- Inline SVG QR helper. Pseudo-QR pattern; same DOM reused. -->
