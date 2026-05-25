@@ -25,16 +25,16 @@
         <div class="foot-col">
           <h5>Producto</h5>
           <ul>
-            <li><a href="/#demo">Demo en vivo</a></li>
-            <li><a href="/#concepto">Cómo funciona</a></li>
-            <li><a href="/#tecnico">Técnico</a></li>
-            <li><a href="/#planes">Planes</a></li>
+            <li><a href="index.php#demo">Demo en vivo</a></li>
+            <li><a href="index.php#concepto">Cómo funciona</a></li>
+            <li><a href="index.php#tecnico">Técnico</a></li>
+            <li><a href="index.php#planes">Planes</a></li>
           </ul>
         </div>
         <div class="foot-col">
           <h5>Soporte</h5>
           <ul>
-            <li><a href="/#faq">FAQ</a></li>
+            <li><a href="index.php#faq">FAQ</a></li>
             <!--No sé a dónde llevarlos, lo voy a dejar en blanco por ahora-->
             <li><a href="#">Estudios partner</a></li>
             <li><a href="#">Guía técnica</a></li>
