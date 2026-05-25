@@ -49,13 +49,30 @@
             <li><a href="cookies.php">Cookies</a></li>
           </ul>
         </div>
+        <div class="social-icons" style="display:flex;gap:12px;align-items:center">
+        <a href="#" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.5A4.5 4.5 0 1016.5 13 4.5 4.5 0 0012 8.5zm6.2-2.1a1.1 1.1 0 11-1.1-1.1 1.1 1.1 0 011.1 1.1z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 10-11.5 9.9v-7h-2.2v-2.9h2.2V9.3c0-2.2 1.3-3.5 3.3-3.5.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2v1.5h2.3l-.4 2.9h-1.9V22A10 10 0 0022 12z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 2v11.5A4.5 4.5 0 1014.5 7H16V4h-3V2H9z"/></svg>
+        </a>
+      </div>
       </div>
     </div>
     <div class="row">
       <div>© 2026 Dynamic Tattoos · Marca registrada</div>
       <div>Hecho con ❤️ por <a href="https://orbitatecnologica.com" target="_blank" rel="noopener noreferrer">Orbitatecnologica</a></div>
+      
     </div>
   </div>
 </footer>
 <?php include 'includes/contacto.php'; ?>
 <script src="js/contacto.js"></script>
+<style>
+  .social-link{color:inherit;opacity:.9;display:inline-flex;align-items:center;justify-content:center}
+  .social-link svg{display:block}
+  .social-link:hover{opacity:1;color:var(--red)}
+</style>
