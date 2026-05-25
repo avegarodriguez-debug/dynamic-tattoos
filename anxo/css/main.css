@@ -858,8 +858,14 @@
     .hero-ctas .btn{padding:10px 14px;font-size:12px}
     .btn{white-space:normal}
     .specs-grid,.spec-card,.body-zone{width:100%}
-    .zone-list{display:flex;flex-wrap:wrap;gap:8px}
-    .zone-li{flex:1 1 48%;min-width:110px}
+    /* Stack zones vertically on very small screens to avoid horizontal swipes */
+    .zone-list{display:flex;flex-direction:column;gap:8px}
+    .zone-li{flex:none;width:100%;min-width:0}
+    /* Keep the active indicator inside the visible area on small screens */
+    .zone-li::before{left:6px}
+    .zone-li.active::before{left:6px}
+    /* Right-align the tag/status cell */
+    .zone-li .tg{justify-self:end}
     .phone .content{padding:10px}
     .dt-modal{padding:12px}
     .dt-modal-box{max-height:calc(100vh - 40px)}
