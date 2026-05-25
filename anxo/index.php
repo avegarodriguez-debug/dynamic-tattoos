@@ -1333,8 +1333,9 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{
 ═══════════════════════════════════════════════════════════════════════ -->
 <script>
 /* ─── CONFIG ─────────────────────────────────────────────────────────── */
-// const STRIPE_KEY = 'TU_STRIPE_PUBLISHABLE_KEY';   // ← pega tu clave aquí
-const CONTACT_ENDPOINT = '';  // ← pega tu endpoint Formspree aquí, p.ej: https://formspree.io/f/XXXX
+// const STRIPE_KEY = 'TU_STRIPE_PUBLISHABLE_KEY';   // ← pega tu clave aquí (p.ej. pk_test_...)
+// Contact endpoint: points to Laravel public API route added at /api/contact
+const CONTACT_ENDPOINT = '/api/contact';
 
 /* ─── PLANES DATA ─────────────────────────────────────────────────────── */
 const PLANES = {

@@ -11,6 +11,8 @@ use App\Http\Controllers\Api\V1\TattooContentController;
 use App\Http\Controllers\Api\V1\TattooController;
 use App\Http\Controllers\Api\V1\TattooScanController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\PublicContactController;
+use App\Http\Controllers\Api\PublicPaymentController;
 
 Route::prefix('v1')->group(function (): void {
     Route::post('/auth/login', [AuthTokenController::class, 'store'])
@@ -79,3 +81,9 @@ Route::prefix('v1')->group(function (): void {
             ->name('api.v1.admin.plans.destroy');
     });
 });
+
+// Public endpoints consumed by static `anxo/` frontend (guest flows)
+Route::post('/create-payment-intent', [PublicPaymentController::class, 'createPaymentIntent'])
+    ->name('api.public.create-payment-intent');
+Route::post('/contact', [PublicContactController::class, 'send'])
+    ->name('api.public.contact');

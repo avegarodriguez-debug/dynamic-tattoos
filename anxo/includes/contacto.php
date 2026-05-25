@@ -1,4 +1,5 @@
 <!-- Contact modal shared en todas las páginas -->
+
 <div class="dt-modal" id="contactModal" role="dialog" aria-modal="true" aria-label="Contacto">
 	<div class="dt-modal-box contact-box">
 		<button class="dt-modal-close" onclick="closeContact()" aria-label="Cerrar">✕</button>
