@@ -38,10 +38,10 @@
     }
   </style>
 
-  <div class="legal-card">
+      <div class="legal-card">
     <div class="legal-body">
       <div class="legal-meta">Documento original: condiciones.pdf</div>
-      <div class="legal-content">
+      <div class="legal-content" data-i18n-html="legal.conditions_html">
 <p>CONDICIONES GENERALES DE CONTRATACIÓN www.dynamic-tattoos.com Servicio Dynamic Tattoos. URL Dinámica para Códigos QR Las presentes Condiciones Generales de Contratación (en adelante, “CGC”) regulan la contratación de los servicios ofrecidos por Órbita Tecnológica Global S.L. a través del Sitio Web www.dynamic-tattoos.com. La contratación del servicio implica la aceptación plena, expresa e inequívoca de las presentes CGC en la versión publicada en el momento de la contratación.</p>
 
 <p>1. IDENTIFICACIÓN DEL PRESTADOR</p>

@@ -181,6 +181,79 @@
     "cookies":"Cookies Policy",
     "privacy":"Privacy Policy",
     "terms":"Terms & Conditions",
-    "conditions":"General Terms of Contract"
+    "conditions":"General Terms of Contract",
+    "terms_html":"<p class='lead'>These Terms and Conditions govern the use of this website and the purchase of services offered by Dynamic Tattoos. Please read them carefully before using the site or contracting any service.</p>\
+  <h2>1. Definitions</h2>\
+  <p>In these Terms, 'User' means any person accessing the site; 'Services' means the products and services offered through the website; 'Provider' means Dynamic Tattoos.</p>\
+  <h2>2. Purpose</h2>\
+  <p>These Terms set out the conditions under which the Provider makes the website available and supplies Services to Users.</p>\
+  <h2>3. Formation of the contract</h2>\
+  <p>Contracts are formed following the process described on the website. The contract is concluded when the Provider confirms acceptance of the order or service electronically.</p>\
+  <h2>4. Prices and payment</h2>\
+  <p>Published prices include taxes unless otherwise stated. Payments are made via the gateways or methods indicated; until payment is received the Provider may cancel acceptance of the order.</p>\
+  <h2>5. Delivery and performance</h2>\
+  <p>Times indicated are estimates. For digital services, delivery is deemed completed when access is enabled or digital assets are made available.</p>\
+  <h2>6. Right of withdrawal and cancellation</h2>\
+  <p>Where consumer law applies, the right of withdrawal and its conditions will be expressly notified. For services begun immediately with the user's consent, withdrawal rights may not apply.</p>\
+  <h2>7. Intellectual property</h2>\
+  <p>All site content (text, design, images, code) is owned by the Provider or licensed third parties. Reproduction is prohibited without express authorization.</p>\
+  <h2>8. User obligations</h2>\
+  <p>Users agree to use the site lawfully and not to perform activities that harm the Provider's operation or reputation.</p>\
+  <h2>9. Warranties and limitation of liability</h2>\
+  <p>Except for legal obligations, the Provider performs services with due diligence but does not guarantee the absence of errors. The Provider is not liable for indirect damages except in cases of fraud or gross negligence.</p>\
+  <h2>10. Force majeure</h2>\
+  <p>The Provider is not liable for non-performance caused by force majeure events.</p>\
+  <h2>11. Modifications</h2>\
+  <p>The Provider may modify these Terms and the website; changes will be published and will apply from their publication unless they affect already perfected contracts.</p>\
+  <h2>12. Data protection</h2>\
+  <p>Data processing arising from use of the site is governed by the Privacy Policy available on the website.</p>\
+  <h2>13. Duration and termination</h2>\
+  <p>The contract duration is as agreed, subject to termination for material breach by either party.</p>\
+  <h2>14. Governing law and jurisdiction</h2>\
+  <p>These Terms are governed by Spanish law. Parties submit to the competent courts unless otherwise agreed.</p>\
+  <h2>15. Contact</h2>\
+  <p>For questions about these Terms contact us at <a href='mailto:contacto@dominio.example'>contacto@dominio.example</a>.</p>",
+    "cookies_html":"<p class='lead'>This Cookies Policy explains how www.dynamic-tattoos.com uses cookies and similar technologies in compliance with applicable law and regulatory guidance.</p>\
+  <h2>What are cookies?</h2>\
+  <p>Cookies are small text files stored on the user's device when visiting a website. They help improve navigation, remember preferences and perform analytics or advertising functions.</p>\
+  <h2>Types of cookies used</h2>\
+  <p>We use the following categories: technical cookies (necessary for site operation), analytics cookies (with consent) and preference or marketing cookies (with consent).</p>\
+  <h2>Cookie management</h2>\
+  <p>The site provides a consent banner with options to accept all, reject all or configure preferences. Users can change choices anytime via the 'Manage cookies' link in the footer.</p>\
+  <h2>Third parties and international transfers</h2>\
+  <p>Certain third-party cookies may transfer data outside the EEA. These transfers are subject to appropriate safeguards (Data Privacy Framework or equivalent guarantees).</p>\
+  <h2>How to disable cookies</h2>\
+  <p>Users can disable cookies via their browser settings; note that disabling certain cookies may affect site functionality.</p>",
+    "privacy_html":"<p class='lead'>This Privacy Policy explains how Dynamic Tattoos (Órbita Tecnológica Global S.L.) collects, uses and protects personal data in accordance with the GDPR and applicable Spanish law.</p>\
+  <h2>1. Controller</h2>\
+  <p>Órbita Tecnológica Global S.L. (CIF B42780791), Rúa Condesa Casa Barcena 11, Vigo, Spain. Contact: info@dynamic-tattoos.com.</p>\
+  <h2>2. Data collected</h2>\
+  <p>We collect identification and contact data provided directly by users, payment data processed by payment gateways (Stripe/PayPal), profile content uploaded by users and technical data collected automatically (IP, browser, usage) for analytics.</p>\
+  <h2>3. Purposes and legal basis</h2>\
+  <p>Processing is based on contract performance, legal obligations, consent for analytics and legitimate interests for service operation and support. Retention periods are set according to the purpose and legal requirements.</p>\
+  <h2>4. Data recipients and transfers</h2>\
+  <p>Processors include Arsys (hosting), Stripe (payments) and Google Analytics (analytics). Where transfers outside the EEA occur, we rely on appropriate safeguards.</p>\
+  <h2>5. Rights</h2>\
+  <p>Users may exercise rights of access, rectification, erasure, restriction, portability and objection by contacting info@dynamic-tattoos.com. Complaints may be lodged with the Spanish Data Protection Agency (AEPD).</p>\
+  <h2>6. Security measures</h2>\
+  <p>We implement technical and organizational measures such as HTTPS, hashed passwords and access controls to protect personal data.</p>",
+    "conditions_html":"<p class='lead'>These General Terms of Contract regulate the supply of Dynamic Tattoos services (dynamic URL for tattooed QR codes). By contracting the service you accept these terms.</p>\
+  <h2>1. Provider identification</h2>\
+  <p>Órbita Tecnológica Global S.L. (CIF B42780791), Rúa Condesa Casa Barcena 11, Vigo, Spain. Contact: info@dynamic-tattoos.com.</p>\
+  <h2>2. Object of the service</h2>\
+  <p>The service provides management of a dynamic URL linked to a QR code intended to be tattooed. The URL allows the user to update associated digital content without modifying the tattoo while the subscription is active.</p>\
+  <h2>3. Plans and pricing</h2>\
+  <p>Available subscription plans and annual prices are published on the website and include VAT. Dynamic Tattoos reserves the right to change prices with prior notice.</p>\
+  <h2>4. Contracting process</h2>\
+  <p>Users select a package, register, accept these terms and complete payment through the selected gateway. The service is activated upon payment confirmation.</p>\
+  <h2>5. Withdrawal and refunds</h2>\
+  <p>Where applicable, consumer withdrawal rights are subject to the rules explained in these terms. Services started immediately with user consent may be excluded from the right of withdrawal. Refunds are generally not provided except where required by law.</p>\
+  <h2>6. Obligations</h2>\
+  <p>The Provider will deliver the service and maintain availability as described. The user must provide truthful information and comply with applicable law in the use of the service.</p>\
+  <h2>7. Term, renewal and cancellation</h2>\
+  <p>Subscriptions are annual and renewable. Cancellation policies and procedures are described in the Terms.</p>\
+  <h2>8. Liability</h2>\
+  <p>The Provider is not responsible for the tattooing process or consequences arising from tattoo application; liability is limited to the amounts paid as described in the Terms.</p>\
+  <p>Last updated: May 2026. Órbita Tecnológica Global S.L. — CIF: B42780791 — Vigo, Spain — info@dynamic-tattoos.com" 
   }
 }

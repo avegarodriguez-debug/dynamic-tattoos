@@ -44,6 +44,7 @@
 			<div class="legal-meta">Condiciones · Uso</div>
 			<p class="lead">Estos Términos y Condiciones regulan el uso del sitio web y la contratación de servicios ofrecidos por Dynamic Tattoos. Léelos con atención antes de usar la web o contratar servicios.</p>
 
+			<div class="legal-content" data-i18n-html="legal.terms_html">
 			<h2>1. Definiciones</h2>
 			<p>En estos términos, "Usuario" se refiere a cualquier persona que accede al sitio; "Servicios" a los productos y servicios ofrecidos en la web; "Proveedor" a Dynamic Tattoos.</p>
 
@@ -88,6 +89,7 @@
 
 			<h2>15. Contacto</h2>
 			<p>Para consultas sobre estos Términos escribe a <a href="mailto:contacto@dominio.example">contacto@dominio.example</a>.</p>
+			</div>
 		</div>
 	</div>
 
