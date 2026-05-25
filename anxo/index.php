@@ -1036,7 +1036,6 @@ window.__pickHeroVideo = function(){
 })();
 
 /* ============= Demo destinations -> phone frame ============= */
-<script>
 window.L = window.L || function(key, fallback){
   try{
     if(window && window.DT_I18N){
@@ -1048,7 +1047,6 @@ window.L = window.L || function(key, fallback){
   }catch(e){}
   return fallback;
 };
-</script>
 (function(){
   const dests = document.querySelectorAll('.dest');
   // Default stock-like images per destination (inline SVG so it works offline)
