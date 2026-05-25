@@ -52,7 +52,7 @@
       </div>
     </div>
     <div class="row">
-      <div>© 2026 Dynamic Tattoos · Madrid</div>
+      <div>© 2026 Dynamic Tattoos · Marca registrada</div>
       <div>Hecho con ❤️ por <a href="https://orbitatecnologica.com" target="_blank" rel="noopener noreferrer">Orbitatecnologica</a></div>
     </div>
   </div>
