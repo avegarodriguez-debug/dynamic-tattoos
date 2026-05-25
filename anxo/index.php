@@ -1036,6 +1036,19 @@ window.__pickHeroVideo = function(){
 })();
 
 /* ============= Demo destinations -> phone frame ============= */
+<script>
+window.L = window.L || function(key, fallback){
+  try{
+    if(window && window.DT_I18N){
+      const parts = key.split('.');
+      let o = window.DT_I18N;
+      for(const p of parts){ if(o && (p in o)) o = o[p]; else { o = undefined; break; } }
+      if(o !== undefined && o !== null) return o;
+    }
+  }catch(e){}
+  return fallback;
+};
+</script>
 (function(){
   const dests = document.querySelectorAll('.dest');
   // Default stock-like images per destination (inline SVG so it works offline)

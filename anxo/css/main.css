@@ -833,6 +833,24 @@
     .wrap{padding:0 18px}
   }
 
+  /* Extra small screens: avoid clipped elements and tighten spacing */
+  @media (max-width:480px){
+    .wrap{padding-left:12px;padding-right:12px}
+    .hero{padding-top:48px;padding-bottom:32px}
+    .hero-right{max-width:220px}
+    .phone{max-width:240px;padding:8px;border-radius:28px}
+    .phone .screen{border-radius:18px}
+    .hero-ctas .btn{padding:10px 14px;font-size:12px}
+    .btn{white-space:normal}
+    .specs-grid,.spec-card,.body-zone{width:100%}
+    .zone-list{display:flex;flex-wrap:wrap;gap:8px}
+    .zone-li{flex:1 1 48%;min-width:110px}
+    .phone .content{padding:10px}
+    .dt-modal{padding:12px}
+    .dt-modal-box{max-height:calc(100vh - 40px)}
+    .hero-upload-btn{top:64px;right:12px}
+  }
+
   /* Body zone map — V2 */
   .body-zone{
     border:1px solid currentColor;background:var(--theme-card, #fff);padding:0;

@@ -1,5 +1,10 @@
 (function(){
   const KEY = 'dt_lang';
+  // global lookup helper (safe even before translations load)
+  try{ window.L = window.L || function(key, fallback){
+    try{ if(window && window.DT_I18N){ const parts = key.split('.'); let o = window.DT_I18N; for(const p of parts){ if(o && (p in o)) o = o[p]; else { o = undefined; break; } } if(o !== undefined && o !== null) return o; } }catch(e){}
+    return fallback;
+  }; }catch(e){}
   async function loadTranslations(lang){
     try{
       const res = await fetch('i18n/'+lang+'.json');
