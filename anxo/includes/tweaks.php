@@ -552,8 +552,15 @@ window.__pickHeroVideo = function(){
   // Initial state
   activate('forearm');
 
-  // Refresh dynamic labels when translations are (re)loaded
-  window.addEventListener('dt:i18n:loaded', ()=>{ try{ activate(currentKey); }catch(e){} });
+  // Refresh dynamic labels when translations are (re)loaded or language changes.
+  // Run an immediate and a delayed activation to avoid race conditions
+  // between the i18n loader and this script.
+  function refreshDynamicLabels(){
+    try{ activate(currentKey); }catch(e){}
+    setTimeout(()=>{ try{ activate(currentKey); }catch(e){} }, 80);
+  }
+  window.addEventListener('dt:i18n:loaded', refreshDynamicLabels);
+  window.addEventListener('dt:langchange', ()=>{ setTimeout(refreshDynamicLabels, 60); });
 })();
 
 /* ============= FAQ accordion ============= */

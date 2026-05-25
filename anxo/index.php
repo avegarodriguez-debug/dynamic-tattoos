@@ -193,7 +193,7 @@
 
     <div class="demo-grid">
       <div>
-        <div class="eyebrow" style="color:inherit;opacity:.7;margin-bottom:18px" data-i18n="demo.eyebrow">
+        <div class="eyebrow" style="color:inherit;opacity:.7;margin-bottom:18px" data-i18n-html="demo.eyebrow">
           Pulsa una opción <span class="ruby">·</span> mira la pantalla
         </div>
         <div class="destinations" id="destinations">
