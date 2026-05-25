@@ -146,6 +146,14 @@
   nav .cta:hover::after{transform:translateX(3px)}
   @media (max-width:880px){nav ul{display:none}}
 
+  /* Ensure nav CTA remains visible and wraps nicely on small screens */
+  @media (max-width:880px){
+    nav.top .row{flex-wrap:wrap;align-items:center;gap:12px}
+    nav.top .brand{flex:0 0 auto}
+    .nav-controls{order:2;flex:1 1 auto;display:flex;justify-content:flex-end}
+    nav .cta{order:3;margin-left:auto;z-index:60}
+  }
+
   /* Marquee */
   .marquee{
     background:var(--ink);color:var(--bone);
@@ -822,15 +830,22 @@
 
   /* Mobile polish: stack spec rows and reduce heavy titles for small screens */
   @media (max-width:640px){
-    .spec-row{grid-template-columns:1fr;gap:10px}
+    /* Prevent horizontal page scrolling caused by pseudo-elements or wide children */
+    body{overflow-x:hidden}
+    .body-zone{overflow-x:hidden;overflow-visible:auto}
     .spec-row .k{min-width:0;margin-bottom:6px}
     .spec-row .v{font-size:18px}
     .dest .t{font-size:18px}
-    .phone{max-width:260px;aspect-ratio:9/19;margin:0 auto;border-radius:36px}
-    .phone .frame-title{font-size:20px}
-    .hero-grid{gap:18px}
+    .zone-list{gap:8px}
+    .zone-li{padding:10px 4px}
+    /* Vertical scrolling only for the list column */
+    .bz-list-col{max-height:calc(100vh - 260px);overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch}
+    .bz-map-col,.bz-detail-col{overflow-x:hidden}
     .hero{padding:56px 0 36px}
     .wrap{padding:0 18px}
+    .hero{overflow:visible;padding-bottom:110px}
+    .hero-right{margin-bottom:8px}
+    .iphone-frame{max-height:52vh}
   }
 
   /* Extra small screens: avoid clipped elements and tighten spacing */
@@ -849,6 +864,8 @@
     .dt-modal{padding:12px}
     .dt-modal-box{max-height:calc(100vh - 40px)}
     .hero-upload-btn{top:64px;right:12px}
+    .hero{overflow:visible;padding-bottom:120px}
+    .iphone-frame{max-height:48vh}
   }
 
   /* Body zone map — V2 */
@@ -880,6 +897,26 @@
     min-height:480px;
   }
   @media(max-width:980px){.bz-body{grid-template-columns:1fr;min-height:auto}}
+
+  /* Mobile: allow zone elements to overflow and keep map height reasonable */
+  @media(max-width:980px){
+    .body-zone{overflow:visible}
+    .bz-map-col{min-height:auto;padding:12px}
+    .body-map{max-height:44vh;margin-top:6px}
+    .bz-list-col{padding:16px 16px 18px}
+    .zone-list{gap:8px}
+    .zone-li{padding:10px 4px}
+    /* Limit list height on small screens and make it scrollable so map/detail remain visible */
+    .bz-list-col{max-height:calc(100vh - 260px);overflow:auto;-webkit-overflow-scrolling:touch}
+  }
+
+  /* Mobile stacking order to make list -> map -> details flow naturally */
+  @media(max-width:980px){
+    .bz-list-col{order:1}
+    .bz-map-col{order:2}
+    .bz-detail-col{order:3}
+    .bz-map-col, .bz-detail-col{width:100%}
+  }
 
   .bz-list-col{
     padding:22px 22px 24px;border-right:1px solid currentColor;
