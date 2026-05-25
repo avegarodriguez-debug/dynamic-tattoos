@@ -43,7 +43,8 @@
     "idx":"Técnico & seguridad",
     "title":"Validado por<br/><em>profesionales</em> del tatuaje.",
     "lede":"Sabemos que tu piel es sagrada. Por eso no dejamos nada al azar — dimensiones, módulo, contraste y zonas verificadas con tatuadores que trabajan línea fina todos los días.",
-    "k":{"dimension":{"label":"Dimensión","note":"4 × 4 cm · Estándar validado · pruebas en curso a 3 × 3 cm sin perder escaneabilidad"},"module":{"label":"Módulo","note":"≥ 1.2 mm · Tamaño mínimo de cada celda para tinta saturada y borde nítido"},"contrast":{"label":"Contraste","note":"Tinta negra plena · Sin sombreado · sin degradado · fondo libre de tatuajes previos"},"error":{"label":"Corrección de error","note":"Nivel H (30%) · Tolera retoques, cicatrización y envejecimiento de la piel"},"guarantee":{"label":"Garantía","note":"URL bajo tu control · Mientras el QR esté bien tatuado, la redirección siempre es tuya"}},
+
+    "k":{"dimension":{"label":"Dimensión","value":"4 × 4 cm","note":"4 × 4 cm · Estándar validado · pruebas en curso a 3 × 3 cm sin perder escaneabilidad"},"module":{"label":"Módulo","value":"≥ 1.2 mm","note":"≥ 1.2 mm · Tamaño mínimo de cada celda para tinta saturada y borde nítido"},"contrast":{"label":"Contraste","value":"Tinta negra plena","note":"Tinta negra plena · Sin sombreado · sin degradado · fondo libre de tatuajes previos"},"error":{"label":"Corrección de error","value":"Nivel H (30%)","note":"Nivel H (30%) · Tolera retoques, cicatrización y envejecimiento de la piel"},"guarantee":{"label":"Garantía","value":"URL bajo tu control","note":"URL bajo tu control · Mientras el QR esté bien tatuado, la redirección siempre es tuya"}},
     "mapTitle":"Mapa anatómico · Zonas validadas",
     "mapToggle":{"front":"Frente","back":"Espalda"},
     "listHead":"8 zonas · 4×4 cm",

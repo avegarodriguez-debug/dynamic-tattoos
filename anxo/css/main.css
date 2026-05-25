@@ -820,6 +820,19 @@
   .spec-row .v{font-family:var(--display);font-size:20px;line-height:1.25;font-weight:700;letter-spacing:-.01em}
   .spec-row .v small{font-family:var(--mono);font-size:11px;color:var(--ash);text-transform:uppercase;letter-spacing:.16em;display:block;margin-top:6px;line-height:1.5}
 
+  /* Mobile polish: stack spec rows and reduce heavy titles for small screens */
+  @media (max-width:640px){
+    .spec-row{grid-template-columns:1fr;gap:10px}
+    .spec-row .k{min-width:0;margin-bottom:6px}
+    .spec-row .v{font-size:18px}
+    .dest .t{font-size:18px}
+    .phone{max-width:260px;aspect-ratio:9/19;margin:0 auto;border-radius:36px}
+    .phone .frame-title{font-size:20px}
+    .hero-grid{gap:18px}
+    .hero{padding:56px 0 36px}
+    .wrap{padding:0 18px}
+  }
+
   /* Body zone map — V2 */
   .body-zone{
     border:1px solid currentColor;background:var(--theme-card, #fff);padding:0;

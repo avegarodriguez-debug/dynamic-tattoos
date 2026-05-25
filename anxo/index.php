@@ -242,9 +242,9 @@
               </div>
               <div class="meta">
                 <span id="frameUrl" data-i18n="demo.frameUrl">portfolio.miestudio.com</span>
-                <span class="pill" data-i18n="demo.framePill">en vivo</span>
+                <span id="framePill" class="pill" data-i18n="demo.framePill">en vivo</span>
               </div>
-              <div style="font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ash)" data-i18n="demo.lastUpdated">Última actualización · hace 2 min</div>
+              <div id="frameLastUpdated" style="font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ash)" data-i18n="demo.lastUpdated">Última actualización · hace 2 min</div>
             </div>
             <div class="home-indicator"></div>
           </div>
@@ -330,23 +330,23 @@
       <div class="spec-card">
         <div class="spec-row">
           <div class="k" data-i18n="specs.k.dimension.label">Dimensión</div>
-          <div class="v">4 × 4 cm <small data-i18n="specs.k.dimension.note">Estándar validado · pruebas en curso a 3 × 3 cm sin perder escaneabilidad</small></div>
+          <div class="v"><span data-i18n="specs.k.dimension.value">4 × 4 cm</span> <small data-i18n="specs.k.dimension.note">Estándar validado · pruebas en curso a 3 × 3 cm sin perder escaneabilidad</small></div>
         </div>
         <div class="spec-row">
           <div class="k" data-i18n="specs.k.module.label">Módulo</div>
-          <div class="v">≥ 1.2 mm <small data-i18n="specs.k.module.note">Tamaño mínimo de cada celda para tinta saturada y borde nítido</small></div>
+          <div class="v"><span data-i18n="specs.k.module.value">≥ 1.2 mm</span> <small data-i18n="specs.k.module.note">Tamaño mínimo de cada celda para tinta saturada y borde nítido</small></div>
         </div>
         <div class="spec-row">
           <div class="k" data-i18n="specs.k.contrast.label">Contraste</div>
-          <div class="v">Tinta negra plena <small data-i18n="specs.k.contrast.note">Sin sombreado · sin degradado · fondo libre de tatuajes previos</small></div>
+          <div class="v"><span data-i18n="specs.k.contrast.value">Tinta negra plena</span> <small data-i18n="specs.k.contrast.note">Sin sombreado · sin degradado · fondo libre de tatuajes previos</small></div>
         </div>
         <div class="spec-row">
           <div class="k" data-i18n="specs.k.error.label">Corrección de error</div>
-          <div class="v">Nivel H (30%) <small data-i18n="specs.k.error.note">Tolera retoques, cicatrización y envejecimiento de la piel</small></div>
+          <div class="v"><span data-i18n="specs.k.error.value">Nivel H (30%)</span> <small data-i18n="specs.k.error.note">Tolera retoques, cicatrización y envejecimiento de la piel</small></div>
         </div>
         <div class="spec-row">
           <div class="k" data-i18n="specs.k.guarantee.label">Garantía</div>
-          <div class="v">URL bajo tu control <small data-i18n="specs.k.guarantee.note">Mientras el QR esté bien tatuado, la redirección siempre es tuya</small></div>
+          <div class="v"><span data-i18n="specs.k.guarantee.value">URL bajo tu control</span> <small data-i18n="specs.k.guarantee.note">Mientras el QR esté bien tatuado, la redirección siempre es tuya</small></div>
         </div>
       </div>
 

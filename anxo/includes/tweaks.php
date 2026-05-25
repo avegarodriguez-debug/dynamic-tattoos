@@ -453,6 +453,13 @@ window.__pickHeroVideo = function(){
     document.getElementById('frameUrl').textContent = L(`tweaks.dest.${key}.url`, m.url);
     document.getElementById('frameLabel').textContent = L(`tweaks.dest.${key}.label`, m.label);
     applyImage(key);
+    // Ensure the last-updated label uses current translations (avoid stale text)
+    try{
+      const lastEl = document.getElementById('frameLastUpdated');
+      if(lastEl) lastEl.textContent = L('demo.lastUpdated', lastEl.textContent || '');
+      const pillEl = document.getElementById('framePill');
+      if(pillEl) pillEl.textContent = L('demo.framePill', pillEl.textContent || '');
+    }catch(e){}
   }
   window.__activateDest = activate;
   window.__refreshDestImage = ()=>applyImage(currentKey);
