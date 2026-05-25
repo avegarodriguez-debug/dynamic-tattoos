@@ -51,7 +51,10 @@
   async function translate(lang){
     const map = await loadTranslations(lang);
     applyTranslations(map);
+    // expose translations globally so other scripts can read them
+    try{ window.DT_I18N = map; }catch(e){}
     document.documentElement.lang = lang;
+    try{ window.dispatchEvent(new CustomEvent('dt:i18n:loaded', { detail:{ lang } })); }catch(e){}
   }
 
   // initial load

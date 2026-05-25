@@ -36,7 +36,28 @@
     "idx":"Technical & safety",
     "title":"Validated by<br/><em>professional</em> tattoo artists.",
     "lede":"We know your skin is sacred. That's why we leave nothing to chance — dimensions, module, contrast and zones verified with tattooers who work fine line every day.",
-    "k":{"dimension":{"label":"Dimension","note":"4 × 4 cm · Standard validated · tests underway at 3 × 3 cm without losing readability"},"module":{"label":"Module","note":"≥ 1.2 mm · Minimum cell size for saturated ink and sharp border"},"contrast":{"label":"Contrast","note":"Full black ink · No shading · No gradient · background free of previous tattoos"},"error":{"label":"Error correction","note":"Level H (30%) · Tolerates touch-ups, scarring and skin aging"},"guarantee":{"label":"Guarantee","note":"URL under your control · While the QR is well tattooed, the redirect is always yours"}}
+    "k":{"dimension":{"label":"Dimension","note":"4 × 4 cm · Standard validated · tests underway at 3 × 3 cm without losing readability"},"module":{"label":"Module","note":"≥ 1.2 mm · Minimum cell size for saturated ink and sharp border"},"contrast":{"label":"Contrast","note":"Full black ink · No shading · No gradient · background free of previous tattoos"},"error":{"label":"Error correction","note":"Level H (30%) · Tolerates touch-ups, scarring and skin aging"},"guarantee":{"label":"Guarantee","note":"URL under your control · While the QR is well tattooed, the redirect is always yours"}},
+    "mapTitle":"Anatomical map · validated zones",
+    "mapToggle":{"front":"Front","back":"Back"},
+    "listHead":"8 zones · 4×4 cm",
+    "detail":{
+      "title":"Selected zone",
+      "curv":"Curvature",
+      "move":"Skin movement",
+      "heal":"Healing",
+      "vis":"Visibility",
+      "ink":"Ink · module"
+    },
+    "zones":{
+      "forearm":{"name":"Inner forearm","statusLabel":"Optimal","curv":"Flat","move":"Low","heal":"3-4 wk","vis":"High","ink":"≥ 1.2 mm","note":"One of the most used zones for dynamic QR. Firm skin, perfect read at any angle."},
+      "biceps":{"name":"Outer biceps","statusLabel":"Optimal","curv":"Mild","move":"Low","heal":"3-4 wk","vis":"Medium","ink":"≥ 1.2 mm","note":"Wide surface, solid contrast. Ideal for a 4×4 cm QR."},
+      "calf":{"name":"Calf","statusLabel":"Optimal","curv":"Mild","move":"Low","heal":"4-5 wk","vis":"Medium","ink":"≥ 1.2 mm","note":"Stable area with good color return. Recommended on the outer part."},
+      "chest":{"name":"Pectoral","statusLabel":"Good","curv":"Mild","move":"Medium","heal":"4-5 wk","vis":"Private","ink":"≥ 1.3 mm","note":"Visibility on demand. Requires placement on upper area to avoid distortion."},
+      "shoulder":{"name":"Shoulder · scapula","statusLabel":"Optimal","curv":"Mild","move":"Low","heal":"3-4 wk","vis":"High","ink":"≥ 1.2 mm","note":"Flat surface over the shoulder blade. Excellent for lateral scanning."},
+      "back":{"name":"Lower back","statusLabel":"Optimal","curv":"Flat","move":"Low","heal":"4 wk","vis":"Private","ink":"≥ 1.2 mm","note":"Large and stable canvas. Ideal if you want a discreet but perfect QR."},
+      "wrist":{"name":"Wrist","statusLabel":"Supervise","curv":"High","move":"High","heal":"5-6 wk","vis":"High","ink":"≥ 1.4 mm","note":"Curvature can distort reading. Acceptable only if validated with a template."},
+      "ribs":{"name":"Ribs","statusLabel":"Supervise","curv":"Medium","move":"High","heal":"5-6 wk","vis":"Private","ink":"≥ 1.4 mm","note":"Thin skin and a lot of respiratory movement. Recommended only for experienced tattooers."}
+    }
   },
   "problem":{
     "idx":"The problem",
@@ -66,15 +87,23 @@
     "framePill":"live",
     "lastUpdated":"Last update · 2 min ago"
   },
+  "tweaks":{
+    "dest":{
+      "portfolio":{"title":"Your professional website","url":"portfolio.miestudio.com","label":"CURRENT DESTINATION · WEB"},
+      "instagram":{"title":"Your favorite social network","url":"instagram.com/aria.ink","label":"CURRENT DESTINATION · SOCIAL"},
+      "video":{"title":"A private video","url":"dyn.tt/u/aria/baile-2026","label":"CURRENT DESTINATION · VIDEO"},
+      "profile":{"title":"Your Dynamic page","url":"dyn.tt/aria","label":"CURRENT DESTINATION · PROFILE"}
+    }
+  },
   "btn":{
     "primary":"Get your Dynamic Tattoo",
     "ghost":"See how it works"
   },
   "plans":{
     "title":"Choose how you want to<br/><em>evolve</em>.",
-    "basico":{"name":"Basic","desc":"Link your QR to an image or external URL. Change the destination whenever you want.","button":"Start Basic"},
-    "standard":{"name":"Standard","desc":"Host your videos directly on the platform. More quality, more control.","button":"Activate Standard"},
-    "premium":{"name":"Premium","desc":"A full profile page, feed-style, where you manage multiple photos and videos.","button":"Reserve Premium"}
+    "basico":{"name":"Basic","desc":"Link your QR to an image or external URL. Change the destination whenever you want.","button":"Start Basic","priceTag":"€ / YEAR","feature1":"QR single + permanent ID","feature2":"Unlimited redirect to external URL","feature3":"Hosted static image (1 file)","feature4":"Web management panel","feature5":"Basic scan analytics"},
+    "standard":{"name":"Standard","desc":"Host your videos directly on the platform. More quality, more control.","button":"Activate Standard","priceTag":"€ / YEAR","feature1":"Everything in Basic","feature2":"Up to 5 hosted videos (Full HD)","feature3":"White-label player","feature4":"Scheduled destination changes","feature5":"Priority support"},
+    "premium":{"name":"Premium","desc":"A full profile page, feed-style, where you manage multiple photos and videos.","button":"Reserve Premium","priceTag":"€ / YEAR","feature1":"Everything in Premium","feature2":"Custom profile page (feed)","feature3":"Unlimited gallery · video + photo","feature4":"Integrated Linktree-style links","feature5":"Optional custom domain","feature6":"Early access to 3×3 cm"}
   },
   "faq":{
     "header":"Before the needle<br/>touches the <em>skin</em>.",

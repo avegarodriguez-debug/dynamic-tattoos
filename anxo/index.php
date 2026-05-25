@@ -352,25 +352,25 @@
 
       <div class="body-zone" id="bodyZone">
         <div class="bz-head">
-          <h4>Mapa anatómico · Zonas validadas</h4>
+          <h4 data-i18n="specs.mapTitle">Mapa anatómico · Zonas validadas</h4>
           <div class="bz-toggle" id="bzToggle">
-            <button class="on" data-view="front">Frente</button>
-            <button data-view="back">Espalda</button>
+            <button class="on" data-view="front" data-i18n="specs.mapToggle.front">Frente</button>
+            <button data-view="back" data-i18n="specs.mapToggle.back">Espalda</button>
           </div>
         </div>
         <div class="bz-body">
           <!-- LIST -->
           <div class="bz-list-col">
-            <div class="bz-list-head">8 zonas · 4×4 cm</div>
+            <div class="bz-list-head" data-i18n="specs.listHead">8 zonas · 4×4 cm</div>
             <div class="zone-list" id="zoneList">
-              <button class="zone-li active" data-zone="forearm"><span class="dt"></span><span class="nm">Antebrazo interno</span><span class="tg">Óptimo</span></button>
-              <button class="zone-li" data-zone="biceps"><span class="dt"></span><span class="nm">Bíceps exterior</span><span class="tg">Óptimo</span></button>
-              <button class="zone-li" data-zone="calf"><span class="dt"></span><span class="nm">Pantorrilla</span><span class="tg">Óptimo</span></button>
-              <button class="zone-li" data-zone="chest"><span class="dt"></span><span class="nm">Pectoral</span><span class="tg">Bueno</span></button>
-              <button class="zone-li" data-zone="shoulder"><span class="dt"></span><span class="nm">Hombro · escápula</span><span class="tg">Óptimo</span></button>
-              <button class="zone-li" data-zone="back"><span class="dt"></span><span class="nm">Espalda baja</span><span class="tg">Óptimo</span></button>
-              <button class="zone-li warn" data-zone="wrist"><span class="dt"></span><span class="nm">Muñeca</span><span class="tg">Curvatura</span></button>
-              <button class="zone-li warn" data-zone="ribs"><span class="dt"></span><span class="nm">Costillas</span><span class="tg">Movimiento</span></button>
+              <button class="zone-li active" data-zone="forearm"><span class="dt"></span><span class="nm" data-i18n="specs.zones.forearm.name">Antebrazo interno</span><span class="tg" data-i18n="specs.zones.forearm.statusLabel">Óptimo</span></button>
+              <button class="zone-li" data-zone="biceps"><span class="dt"></span><span class="nm" data-i18n="specs.zones.biceps.name">Bíceps exterior</span><span class="tg" data-i18n="specs.zones.biceps.statusLabel">Óptimo</span></button>
+              <button class="zone-li" data-zone="calf"><span class="dt"></span><span class="nm" data-i18n="specs.zones.calf.name">Pantorrilla</span><span class="tg" data-i18n="specs.zones.calf.statusLabel">Óptimo</span></button>
+              <button class="zone-li" data-zone="chest"><span class="dt"></span><span class="nm" data-i18n="specs.zones.chest.name">Pectoral</span><span class="tg" data-i18n="specs.zones.chest.statusLabel">Bueno</span></button>
+              <button class="zone-li" data-zone="shoulder"><span class="dt"></span><span class="nm" data-i18n="specs.zones.shoulder.name">Hombro · escápula</span><span class="tg" data-i18n="specs.zones.shoulder.statusLabel">Óptimo</span></button>
+              <button class="zone-li" data-zone="back"><span class="dt"></span><span class="nm" data-i18n="specs.zones.back.name">Espalda baja</span><span class="tg" data-i18n="specs.zones.back.statusLabel">Óptimo</span></button>
+              <button class="zone-li warn" data-zone="wrist"><span class="dt"></span><span class="nm" data-i18n="specs.zones.wrist.name">Muñeca</span><span class="tg" data-i18n="specs.zones.wrist.statusLabel">Curvatura</span></button>
+              <button class="zone-li warn" data-zone="ribs"><span class="dt"></span><span class="nm" data-i18n="specs.zones.ribs.name">Costillas</span><span class="tg" data-i18n="specs.zones.ribs.statusLabel">Movimiento</span></button>
             </div>
           </div>
 
@@ -406,18 +406,18 @@
 
           <!-- DETAIL -->
           <div class="bz-detail-col" id="bzDetail">
-            <div class="bz-detail-head">Zona seleccionada</div>
-            <h5 class="bz-detail-name" id="bzName">Antebrazo interno</h5>
-            <span class="bz-detail-status optimal" id="bzStatus">Óptimo</span>
+            <div class="bz-detail-head" data-i18n="specs.detail.title">Zona seleccionada</div>
+            <h5 class="bz-detail-name" id="bzName" data-i18n="specs.zones.forearm.name">Antebrazo interno</h5>
+            <span class="bz-detail-status optimal" id="bzStatus" data-i18n="specs.zones.forearm.statusLabel">Óptimo</span>
             <div class="bz-stats">
-              <div class="bz-stat"><span class="k">Curvatura</span><span class="v" id="bzCurv">Plana</span></div>
-              <div class="bz-stat"><span class="k">Movimiento piel</span><span class="v" id="bzMove">Bajo</span></div>
-              <div class="bz-stat"><span class="k">Cicatrización</span><span class="v" id="bzHeal">3-4 sem.</span></div>
-              <div class="bz-stat"><span class="k">Visibilidad</span><span class="v" id="bzVis">Alta</span></div>
-              <div class="bz-stat"><span class="k">Tinta · módulo</span><span class="v" id="bzInk">≥ 1.2 mm</span></div>
+              <div class="bz-stat"><span class="k" data-i18n="specs.detail.curv">Curvatura</span><span class="v" id="bzCurv" data-i18n="specs.zones.forearm.curv">Plana</span></div>
+              <div class="bz-stat"><span class="k" data-i18n="specs.detail.move">Movimiento piel</span><span class="v" id="bzMove" data-i18n="specs.zones.forearm.move">Bajo</span></div>
+              <div class="bz-stat"><span class="k" data-i18n="specs.detail.heal">Cicatrización</span><span class="v" id="bzHeal" data-i18n="specs.zones.forearm.heal">3-4 sem.</span></div>
+              <div class="bz-stat"><span class="k" data-i18n="specs.detail.vis">Visibilidad</span><span class="v" id="bzVis" data-i18n="specs.zones.forearm.vis">Alta</span></div>
+              <div class="bz-stat"><span class="k" data-i18n="specs.detail.ink">Tinta · módulo</span><span class="v" id="bzInk" data-i18n="specs.zones.forearm.ink">≥ 1.2 mm</span></div>
             </div>
             <div class="bz-note" id="bzNote">
-              Una de las zonas más usadas para QR dinámico. Piel firme, lectura perfecta a cualquier ángulo.
+              <span data-i18n-html="specs.zones.forearm.note">Una de las zonas más usadas para QR dinámico. Piel firme, lectura perfecta a cualquier ángulo.</span>
             </div>
           </div>
         </div>
@@ -440,15 +440,14 @@
         <h3 data-i18n="plans.basico.name">Básico</h3>
         <p class="desc" data-i18n="plans.basico.desc">Vincula tu QR a una imagen o URL externa. Cambia el destino cuando quieras.</p>
         <div>
-          <div class="price">35<span class="price-curr">€ / AÑO</span></div>
-          
+          <div class="price">35<span class="price-curr" data-i18n="plans.basico.priceTag">€ / AÑO</span></div>
         </div>
         <ul>
-          <li>QR único + ID permanente</li>
-          <li>Redirección ilimitada a URL externa</li>
-          <li>Imagen estática alojada (1 archivo)</li>
-          <li>Panel web de gestión</li>
-          <li>Estadísticas básicas de escaneo</li>
+          <li data-i18n="plans.basico.feature1">QR único + ID permanente</li>
+          <li data-i18n="plans.basico.feature2">Redirección ilimitada a URL externa</li>
+          <li data-i18n="plans.basico.feature3">Imagen estática alojada (1 archivo)</li>
+          <li data-i18n="plans.basico.feature4">Panel web de gestión</li>
+          <li data-i18n="plans.basico.feature5">Estadísticas básicas de escaneo</li>
         </ul>
         <button class="btn btn-primary" onclick="openCheckout('basico')" type="button"><span data-i18n="plans.basico.button">Empezar básico</span> <span class="arrow">→</span></button>
       </div>
@@ -458,15 +457,14 @@
         <h3 data-i18n="plans.standard.name">Estándar</h3>
         <p class="desc mute" data-i18n="plans.standard.desc">Aloja tus videos directamente en la plataforma. Más calidad, más control.</p>
         <div>
-          <div class="price">55<span class="price-curr">€ / AÑO</span></div>
-          
+          <div class="price">55<span class="price-curr" data-i18n="plans.standard.priceTag">€ / AÑO</span></div>
         </div>
         <ul>
-          <li>Todo lo del plan Básico</li>
-          <li>Hasta 5 videos alojados (Full HD)</li>
-          <li>Reproductor sin marca</li>
-          <li>Programación de cambios por fecha</li>
-          <li>Soporte prioritario</li>
+          <li data-i18n="plans.standard.feature1">Todo lo del plan Básico</li>
+          <li data-i18n="plans.standard.feature2">Hasta 5 videos alojados (Full HD)</li>
+          <li data-i18n="plans.standard.feature3">Reproductor sin marca</li>
+          <li data-i18n="plans.standard.feature4">Programación de cambios por fecha</li>
+          <li data-i18n="plans.standard.feature5">Soporte prioritario</li>
         </ul>
         <button class="btn btn-primary" onclick="openCheckout('premium')" type="button"><span data-i18n="plans.standard.button">Activar Estándar</span> <span class="arrow">→</span></button>
       </div>
@@ -476,16 +474,15 @@
         <h3 data-i18n="plans.premium.name">Premium</h3>
         <p class="desc" data-i18n="plans.premium.desc">Una página de perfil completa, estilo feed, donde gestionas múltiples fotos y videos.</p>
         <div>
-          <div class="price">65<span class="price-curr">€ / AÑO</span></div>
-          
+          <div class="price">65<span class="price-curr" data-i18n="plans.premium.priceTag">€ / AÑO</span></div>
         </div>
         <ul>
-          <li>Todo lo del plan Premium</li>
-          <li>Página de perfil personalizada (feed)</li>
-          <li>Galería ilimitada · video + foto</li>
-          <li>Enlaces tipo Linktree integrados</li>
-          <li>Dominio propio opcional</li>
-          <li>Acceso anticipado a 3×3 cm</li>
+          <li data-i18n="plans.premium.feature1">Todo lo del plan Premium</li>
+          <li data-i18n="plans.premium.feature2">Página de perfil personalizada (feed)</li>
+          <li data-i18n="plans.premium.feature3">Galería ilimitada · video + foto</li>
+          <li data-i18n="plans.premium.feature4">Enlaces tipo Linktree integrados</li>
+          <li data-i18n="plans.premium.feature5">Dominio propio opcional</li>
+          <li data-i18n="plans.premium.feature6">Acceso anticipado a 3×3 cm</li>
         </ul>
         <button class="btn btn-primary" onclick="openCheckout('top')" type="button"><span data-i18n="plans.premium.button">Reservar PREMIUM</span> <span class="arrow">→</span></button>
       </div>

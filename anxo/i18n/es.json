@@ -36,7 +36,28 @@
     "idx":"Técnico & seguridad",
     "title":"Validado por<br/><em>profesionales</em> del tatuaje.",
     "lede":"Sabemos que tu piel es sagrada. Por eso no dejamos nada al azar — dimensiones, módulo, contraste y zonas verificadas con tatuadores que trabajan línea fina todos los días.",
-    "k":{"dimension":{"label":"Dimensión","note":"4 × 4 cm · Estándar validado · pruebas en curso a 3 × 3 cm sin perder escaneabilidad"},"module":{"label":"Módulo","note":"≥ 1.2 mm · Tamaño mínimo de cada celda para tinta saturada y borde nítido"},"contrast":{"label":"Contraste","note":"Tinta negra plena · Sin sombreado · sin degradado · fondo libre de tatuajes previos"},"error":{"label":"Corrección de error","note":"Nivel H (30%) · Tolera retoques, cicatrización y envejecimiento de la piel"},"guarantee":{"label":"Garantía","note":"URL bajo tu control · Mientras el QR esté bien tatuado, la redirección siempre es tuya"}}
+    "k":{"dimension":{"label":"Dimensión","note":"4 × 4 cm · Estándar validado · pruebas en curso a 3 × 3 cm sin perder escaneabilidad"},"module":{"label":"Módulo","note":"≥ 1.2 mm · Tamaño mínimo de cada celda para tinta saturada y borde nítido"},"contrast":{"label":"Contraste","note":"Tinta negra plena · Sin sombreado · sin degradado · fondo libre de tatuajes previos"},"error":{"label":"Corrección de error","note":"Nivel H (30%) · Tolera retoques, cicatrización y envejecimiento de la piel"},"guarantee":{"label":"Garantía","note":"URL bajo tu control · Mientras el QR esté bien tatuado, la redirección siempre es tuya"}},
+    "mapTitle":"Mapa anatómico · Zonas validadas",
+    "mapToggle":{"front":"Frente","back":"Espalda"},
+    "listHead":"8 zonas · 4×4 cm",
+    "detail":{
+      "title":"Zona seleccionada",
+      "curv":"Curvatura",
+      "move":"Movimiento piel",
+      "heal":"Cicatrización",
+      "vis":"Visibilidad",
+      "ink":"Tinta · módulo"
+    },
+    "zones":{
+      "forearm":{"name":"Antebrazo interno","statusLabel":"Óptimo","curv":"Plana","move":"Bajo","heal":"3-4 sem.","vis":"Alta","ink":"≥ 1.2 mm","note":"Una de las zonas más usadas para QR dinámico. Piel firme, lectura perfecta a cualquier ángulo."},
+      "biceps":{"name":"Bíceps exterior","statusLabel":"Óptimo","curv":"Leve","move":"Bajo","heal":"3-4 sem.","vis":"Media","ink":"≥ 1.2 mm","note":"Superficie amplia, contraste sólido. Ideal para QR de 4×4 cm."},
+      "calf":{"name":"Pantorrilla","statusLabel":"Óptimo","curv":"Leve","move":"Bajo","heal":"4-5 sem.","vis":"Media","ink":"≥ 1.2 mm","note":"Zona estable con buen retorno cromático. Recomendado en parte exterior."},
+      "chest":{"name":"Pectoral","statusLabel":"Bueno","curv":"Leve","move":"Medio","heal":"4-5 sem.","vis":"Privada","ink":"≥ 1.3 mm","note":"Visibilidad bajo demanda. Requiere placado en zona alta para evitar distorsión."},
+      "shoulder":{"name":"Hombro · escápula","statusLabel":"Óptimo","curv":"Leve","move":"Bajo","heal":"3-4 sem.","vis":"Alta","ink":"≥ 1.2 mm","note":"Superficie plana sobre el omóplato. Excelente para escaneo lateral."},
+      "back":{"name":"Espalda baja","statusLabel":"Óptimo","curv":"Plana","move":"Bajo","heal":"4 sem.","vis":"Privada","ink":"≥ 1.2 mm","note":"Lienzo amplio y estable. Ideal si buscas un QR discreto pero perfecto."},
+      "wrist":{"name":"Muñeca","statusLabel":"Supervisar","curv":"Alta","move":"Alto","heal":"5-6 sem.","vis":"Alta","ink":"≥ 1.4 mm","note":"La curvatura puede distorsionar la lectura. Aceptable solo si se valida con plantilla previa."},
+      "ribs":{"name":"Costillas","statusLabel":"Supervisar","curv":"Media","move":"Alto","heal":"5-6 sem.","vis":"Privada","ink":"≥ 1.4 mm","note":"Piel fina y mucho movimiento respiratorio. Recomendado solo a tatuadores experimentados."}
+    }
   },
   "problem":{
     "idx":"El problema",
@@ -66,14 +87,22 @@
     "framePill":"en vivo",
     "lastUpdated":"Última actualización · hace 2 min"
   },
+  "tweaks":{
+    "dest":{
+      "portfolio":{"title":"Tu web profesional","url":"portfolio.miestudio.com","label":"DESTINO ACTUAL · WEB"},
+      "instagram":{"title":"Tu red social favorita","url":"instagram.com/aria.ink","label":"DESTINO ACTUAL · RED SOCIAL"},
+      "video":{"title":"Un video privado","url":"dyn.tt/u/aria/baile-2026","label":"DESTINO ACTUAL · VIDEO"},
+      "profile":{"title":"Tu página Dynamic","url":"dyn.tt/aria","label":"DESTINO ACTUAL · PERFIL"}
+    }
+  },
   "btn":{
     "primary":"Haz tu tatuaje dinámico","ghost":"Ver cómo funciona"
   },
   "plans":{
     "title":"Elige cómo quieres<br/><em>evolucionar</em>.",
-    "basico":{"name":"Básico","desc":"Vincula tu QR a una imagen o URL externa. Cambia el destino cuando quieras.","button":"Empezar básico"},
-    "standard":{"name":"Estándar","desc":"Aloja tus videos directamente en la plataforma. Más calidad, más control.","button":"Activar Estándar"},
-    "premium":{"name":"Premium","button":"Reservar PREMIUM"}
+    "basico":{"name":"Básico","desc":"Vincula tu QR a una imagen o URL externa. Cambia el destino cuando quieras.","button":"Empezar básico","priceTag":"€ / AÑO","feature1":"QR único + ID permanente","feature2":"Redirección ilimitada a URL externa","feature3":"Imagen estática alojada (1 archivo)","feature4":"Panel web de gestión","feature5":"Estadísticas básicas de escaneo"},
+    "standard":{"name":"Estándar","desc":"Aloja tus videos directamente en la plataforma. Más calidad, más control.","button":"Activar Estándar","priceTag":"€ / AÑO","feature1":"Todo lo del plan Básico","feature2":"Hasta 5 videos alojados (Full HD)","feature3":"Reproductor sin marca","feature4":"Programación de cambios por fecha","feature5":"Soporte prioritario"},
+    "premium":{"name":"Premium","desc":"Una página de perfil completa, estilo feed, donde gestionas múltiples fotos y videos.","button":"Reservar PREMIUM","priceTag":"€ / AÑO","feature1":"Todo lo del plan Premium","feature2":"Página de perfil personalizada (feed)","feature3":"Galería ilimitada · video + foto","feature4":"Enlaces tipo Linktree integrados","feature5":"Dominio propio opcional","feature6":"Acceso anticipado a 3×3 cm"}
   },
   "faq":{
     "header":"Antes de que la aguja<br/>toque la <em>piel</em>.",
@@ -88,6 +117,8 @@
     "title":"Activar <em>Estándar</em>",
     "pricePeriod":"/ año · facturado anual",
     "labels":{"name":"Nombre","lastname":"Apellidos","email":"Email","phone":"Teléfono (opcional)"},
+    "secureLabel":"Pago seguro",
+    "ssl":"SSL cifrado · Procesado por Stripe",
     "submit":"Contratar ahora",
     "successTitle":"¡Solicitud recibida!",
     "successMsg":"Te contactaremos en menos de 24 horas. Revisa tu email <strong id=\"coSuccessEmail\"></strong>."
@@ -96,7 +127,8 @@
     "title":"Contacto","subtitle":"Respuesta en menos de 24 horas. Sin compromisos.",
     "labels":{"name":"Nombre","email":"Email","subject":"Asunto","message":"Mensaje"},
     "submit":"Enviar mensaje",
-    "successTitle":"Mensaje enviado","successMsg":"Gracias por contactarnos. Te responderemos lo antes posible en <strong id=\"ctSuccessEmail\"></strong>." 
+    "successTitle":"Mensaje enviado","successMsg":"Gracias por contactarnos. Te responderemos lo antes posible en <strong id=\"ctSuccessEmail\"></strong>.",
+    "close":"Cerrar"
   },
   "footer":{
     "madeby":"Hecho con ❤️ por Orbitatecnologica",
