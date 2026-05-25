@@ -4,12 +4,19 @@
     "demo":"Demo",
     "tech":"Technical",
     "plans":"Plans",
-    "faq":"FAQ"
+    "faq":"FAQ",
+    "reserve":"Reserve QR"
   },
   "hero":{
     "eyebrow":"Smart ink · Madrid · Launch 2026",
     "title":"Your story changes<br/>every second.<br/><span class=\"ev\">Your tattoo does too</span>",
     "lede":"We fuse the permanence of body art with the boundless freedom of the digital universe. <strong>One tattoo on your skin. Infinite stories to tell.</strong>"
+    ,"siderail":"Est. 2026 · The revolution of smart ink",
+    "meta":{
+      "dimension":"Standard validated",
+      "changes":"Destination changes",
+      "noLaser":"No regrets"
+    }
   },
   "marquee":{
     "item1":"Smart ink",
@@ -101,9 +108,9 @@
   },
   "plans":{
     "title":"Choose how you want to<br/><em>evolve</em>.",
-    "basico":{"name":"Basic","desc":"Link your QR to an image or external URL. Change the destination whenever you want.","button":"Start Basic","priceTag":"€ / YEAR","feature1":"QR single + permanent ID","feature2":"Unlimited redirect to external URL","feature3":"Hosted static image (1 file)","feature4":"Web management panel","feature5":"Basic scan analytics"},
-    "standard":{"name":"Standard","desc":"Host your videos directly on the platform. More quality, more control.","button":"Activate Standard","priceTag":"€ / YEAR","feature1":"Everything in Basic","feature2":"Up to 5 hosted videos (Full HD)","feature3":"White-label player","feature4":"Scheduled destination changes","feature5":"Priority support"},
-    "premium":{"name":"Premium","desc":"A full profile page, feed-style, where you manage multiple photos and videos.","button":"Reserve Premium","priceTag":"€ / YEAR","feature1":"Everything in Premium","feature2":"Custom profile page (feed)","feature3":"Unlimited gallery · video + photo","feature4":"Integrated Linktree-style links","feature5":"Optional custom domain","feature6":"Early access to 3×3 cm"}
+    "basico":{"name":"Basic","title":"Start with <em>Basic</em>","desc":"Link your QR to an image or external URL. Change the destination whenever you want.","button":"Start Basic","priceTag":"€ / YEAR","feature1":"QR single + permanent ID","feature2":"Unlimited redirect to external URL","feature3":"Hosted static image (1 file)","feature4":"Web management panel","feature5":"Basic scan analytics"},
+    "standard":{"name":"Standard","title":"Activate <em>Standard</em>","desc":"Host your videos directly on the platform. More quality, more control.","button":"Activate Standard","priceTag":"€ / YEAR","feature1":"Everything in Basic","feature2":"Up to 5 hosted videos (Full HD)","feature3":"White-label player","feature4":"Scheduled destination changes","feature5":"Priority support"},
+    "premium":{"name":"Premium","title":"Reserve <em>Premium</em>","desc":"A full profile page, feed-style, where you manage multiple photos and videos.","button":"Reserve Premium","priceTag":"€ / YEAR","feature1":"Everything in Premium","feature2":"Custom profile page (feed)","feature3":"Unlimited gallery · video + photo","feature4":"Integrated Linktree-style links","feature5":"Optional custom domain","feature6":"Early access to 3×3 cm"}
   },
   "faq":{
     "header":"Before the needle<br/>touches the <em>skin</em>.",
@@ -111,7 +118,7 @@
     "q2":{"q":"How long does a tattooed QR last on skin?","a":"With quality ink and a skilled artist, like any fine tattoo: decades. We use error correction (level H) to tolerate touch-ups, scarring and aging."},
     "q3":{"q":"Can I cancel the subscription?","a":"Yes, anytime. Your QR will keep working in static redirect mode (the last saved URL). To keep changing the destination, simply reactivate."},
     "q4":{"q":"Does it work on the wrist?","a":"It works, but curvature can affect readability. We recommend flat areas: inner forearm, outer biceps, calf or chest."},
-    "q5":{"q":"Do I need to be a professional tattoo artist?","a":"No, but we recommend one experienced in fine lines. We send a technical guide and a stencil to your studio."}
+    "q5":{"q":"Do I need to be a professional tattoo artist?","a":"No, but we recommend one experienced in fine lines. We send a technical guide and a stencil to your studio. If you live in Madrid, Barcelona or Valencia we have certified partner studios."}
   },
   "checkout":{
     "badge":"Plan",

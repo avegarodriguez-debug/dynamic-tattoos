@@ -61,15 +61,15 @@
         <div class="hero-meta">
           <div class="m">
             <div class="num">4×4<span class="ruby">cm</span></div>
-            <div class="lbl">Estándar validado</div>
+            <div class="lbl" data-i18n="hero.meta.dimension">Estándar validado</div>
           </div>
           <div class="m">
             <div class="num">∞</div>
-            <div class="lbl">Cambios de destino</div>
+            <div class="lbl" data-i18n="hero.meta.changes">Cambios de destino</div>
           </div>
           <div class="m">
             <div class="num">0<span class="ruby">·</span>láser</div>
-            <div class="lbl">Sin arrepentimientos</div>
+            <div class="lbl" data-i18n="hero.meta.noLaser">Sin arrepentimientos</div>
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@
       </div>
     </div>
   </div>
-  <div class="siderail">Est. 2026 · La revolución de la tinta inteligente</div>
+  <div class="siderail" data-i18n="hero.siderail">Est. 2026 · La revolución de la tinta inteligente</div>
 </header>
 
 <!-- PROBLEM -->
@@ -516,8 +516,8 @@
         <div class="q-body"><div class="q-body-inner" data-i18n="faq.q4.a">Funciona, pero la curvatura puede afectar la lectura. Recomendamos zonas planas: antebrazo interno, bíceps exterior, pantorrilla o pectoral. Consulta nuestra guía de zonificación arriba.</div></div>
       </button>
       <button class="q">
-        <div class="q-head"><div class="q-num">05</div><div class="q-t">¿Necesito ser tatuador profesional?</div><div class="q-x">+</div></div>
-        <div class="q-body"><div class="q-body-inner">No, pero te recomendamos uno con experiencia en líneas finas. Enviamos guía técnica y plantilla a tu estudio. Si vives en Madrid, Barcelona o Valencia tenemos estudios partner certificados.</div></div>
+        <div class="q-head"><div class="q-num">05</div><div class="q-t" data-i18n="faq.q5.q">¿Necesito ser tatuador profesional?</div><div class="q-x">+</div></div>
+        <div class="q-body"><div class="q-body-inner" data-i18n="faq.q5.a">No, pero te recomendamos uno con experiencia en líneas finas. Enviamos guía técnica y plantilla a tu estudio. Si vives en Madrid, Barcelona o Valencia tenemos estudios partner certificados.</div></div>
       </button>
     </div>
   </div>
@@ -1342,26 +1342,65 @@ const PLANES = {
 };
 
 /* ─── CHECKOUT MODAL ─────────────────────────────────────────────────── */
+function t(key, fallback){
+  try{
+    if(window && window.DT_I18N){
+      const parts = key.split('.');
+      let o = window.DT_I18N;
+      for(const p of parts){ if(o && (p in o)) o = o[p]; else { o = undefined; break; } }
+      if(o !== undefined && o !== null) return o;
+    }
+  }catch(e){}
+  return fallback;
+}
+
 function openCheckout(plan){
   const p = PLANES[plan] || PLANES.premium;
-  document.getElementById('coPlanBadge').textContent  = p.label;
-  document.getElementById('coPlanTitle').innerHTML    = p.title;
-  document.getElementById('coPlanPrice').textContent  = p.price;
-  document.getElementById('coSubmitPrice').textContent= p.priceTag;
-  document.getElementById('coSubmitBtn').dataset.plan = plan;
+  const badge = t(`plans.${plan}.name`, p.label);
+  const titleHtml = t(`plans.${plan}.title`, p.title);
+  const price = p.price;
+  const priceTag = t(`plans.${plan}.priceTag`, p.priceTag);
+
+  const badgeEl = document.getElementById('coPlanBadge');
+  const titleEl = document.getElementById('coPlanTitle');
+  const priceEl = document.getElementById('coPlanPrice');
+  const submitPriceEl = document.getElementById('coSubmitPrice');
+  const submitBtn = document.getElementById('coSubmitBtn');
+
+  if(badgeEl) badgeEl.textContent = badge;
+  if(titleEl) titleEl.innerHTML = titleHtml;
+  if(priceEl) priceEl.textContent = price;
+  if(submitPriceEl) submitPriceEl.textContent = priceTag;
+  if(submitBtn) submitBtn.dataset.plan = plan;
+
   // Reset state
-  document.getElementById('coForm').style.display    = '';
-  document.getElementById('coSuccess').style.display = 'none';
+  const formEl = document.getElementById('coForm');
+  const successEl = document.getElementById('coSuccess');
+  if(formEl) formEl.style.display = '';
+  if(successEl) successEl.style.display = 'none';
+
   const modal = document.getElementById('checkoutModal');
-  modal.style.display = 'flex';
-  requestAnimationFrame(()=> modal.classList.add('open'));
-  document.body.style.overflow = 'hidden';
+  if(modal){ modal.style.display = 'flex'; requestAnimationFrame(()=> modal.classList.add('open')); document.body.style.overflow = 'hidden'; }
 }
+
 function closeCheckout(){
   const modal = document.getElementById('checkoutModal');
+  if(!modal) return;
   modal.classList.remove('open');
   setTimeout(()=>{ modal.style.display='none'; document.body.style.overflow=''; }, 250);
 }
+
+// When translations are (re)loaded, refresh checkout texts if modal is open
+window.addEventListener('dt:i18n:loaded', ()=>{
+  try{
+    const checkoutModal = document.getElementById('checkoutModal');
+    if(!checkoutModal) return;
+    const isOpen = checkoutModal.style.display === 'flex' || checkoutModal.classList.contains('open');
+    if(!isOpen) return;
+    const plan = document.getElementById('coSubmitBtn')?.dataset.plan;
+    if(plan) openCheckout(plan);
+  }catch(e){}
+});
 
 function submitCheckout(){
   const name    = document.getElementById('coName').value.trim();

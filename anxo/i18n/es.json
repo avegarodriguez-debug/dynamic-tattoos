@@ -4,12 +4,19 @@
     "demo":"Demo",
     "tech":"Técnico",
     "plans":"Planes",
-    "faq":"FAQ"
+    "faq":"FAQ",
+    "reserve":"Reservar QR"
   },
   "hero":{
     "eyebrow":"Tinta inteligente · Madrid · Lanzamiento 2026",
     "title":"Tu historia cambia<br/>cada segundo.<br/><span class=\"ev\">Tu tatuaje también</span>",
     "lede":"Fusionamos lo permanente del arte corporal con la libertad absoluta del universo digital. <strong>Un solo tatuaje en tu piel. Infinitas historias por contar.</strong>"
+    ,"siderail":"Est. 2026 · La revolución de la tinta inteligente",
+    "meta":{
+      "dimension":"Estándar validado",
+      "changes":"Cambios de destino",
+      "noLaser":"Sin arrepentimientos"
+    }
   },
   "marquee":{
     "item1":"Tinta inteligente",
@@ -100,9 +107,9 @@
   },
   "plans":{
     "title":"Elige cómo quieres<br/><em>evolucionar</em>.",
-    "basico":{"name":"Básico","desc":"Vincula tu QR a una imagen o URL externa. Cambia el destino cuando quieras.","button":"Empezar básico","priceTag":"€ / AÑO","feature1":"QR único + ID permanente","feature2":"Redirección ilimitada a URL externa","feature3":"Imagen estática alojada (1 archivo)","feature4":"Panel web de gestión","feature5":"Estadísticas básicas de escaneo"},
-    "standard":{"name":"Estándar","desc":"Aloja tus videos directamente en la plataforma. Más calidad, más control.","button":"Activar Estándar","priceTag":"€ / AÑO","feature1":"Todo lo del plan Básico","feature2":"Hasta 5 videos alojados (Full HD)","feature3":"Reproductor sin marca","feature4":"Programación de cambios por fecha","feature5":"Soporte prioritario"},
-    "premium":{"name":"Premium","desc":"Una página de perfil completa, estilo feed, donde gestionas múltiples fotos y videos.","button":"Reservar PREMIUM","priceTag":"€ / AÑO","feature1":"Todo lo del plan Premium","feature2":"Página de perfil personalizada (feed)","feature3":"Galería ilimitada · video + foto","feature4":"Enlaces tipo Linktree integrados","feature5":"Dominio propio opcional","feature6":"Acceso anticipado a 3×3 cm"}
+    "basico":{"name":"Básico","title":"Empezar con <em>Básico</em>","desc":"Vincula tu QR a una imagen o URL externa. Cambia el destino cuando quieras.","button":"Empezar básico","priceTag":"€ / AÑO","feature1":"QR único + ID permanente","feature2":"Redirección ilimitada a URL externa","feature3":"Imagen estática alojada (1 archivo)","feature4":"Panel web de gestión","feature5":"Estadísticas básicas de escaneo"},
+    "standard":{"name":"Estándar","title":"Activar <em>Estándar</em>","desc":"Aloja tus videos directamente en la plataforma. Más calidad, más control.","button":"Activar Estándar","priceTag":"€ / AÑO","feature1":"Todo lo del plan Básico","feature2":"Hasta 5 videos alojados (Full HD)","feature3":"Reproductor sin marca","feature4":"Programación de cambios por fecha","feature5":"Soporte prioritario"},
+    "premium":{"name":"Premium","title":"Reservar <em>Premium</em>","desc":"Una página de perfil completa, estilo feed, donde gestionas múltiples fotos y videos.","button":"Reservar PREMIUM","priceTag":"€ / AÑO","feature1":"Todo lo del plan Premium","feature2":"Página de perfil personalizada (feed)","feature3":"Galería ilimitada · video + foto","feature4":"Enlaces tipo Linktree integrados","feature5":"Dominio propio opcional","feature6":"Acceso anticipado a 3×3 cm"}
   },
   "faq":{
     "header":"Antes de que la aguja<br/>toque la <em>piel</em>.",
@@ -110,7 +117,7 @@
     "q2":{"q":"¿Cuánto dura un QR tatuado en la piel?","a":"Con tinta de calidad y un buen tatuador, igual que cualquier tatuaje fino: décadas. Usamos corrección de error nivel H (30%) para tolerar retoques, cicatrización y envejecimiento de la piel."},
     "q3":{"q":"¿Puedo cancelar la suscripción?","a":"Sí, en cualquier momento. Tu QR seguirá funcionando en modo de redirección estática (la última URL guardada). Si quieres seguir cambiando el destino, basta con reactivar."},
     "q4":{"q":"¿Funciona si lo tatúo en la muñeca?","a":"Funciona, pero la curvatura puede afectar la lectura. Recomendamos zonas planas: antebrazo interno, bíceps exterior, pantorrilla o pectoral."},
-    "q5":{"q":"¿Necesito ser tatuador profesional?","a":"No, pero te recomendamos uno con experiencia en líneas finas. Enviamos guía técnica y plantilla a tu estudio."}
+    "q5":{"q":"¿Necesito ser tatuador profesional?","a":"No, pero te recomendamos uno con experiencia en líneas finas. Enviamos guía técnica y plantilla a tu estudio. Si vives en Madrid, Barcelona o Valencia tenemos estudios partner certificados."}
   },
   "checkout":{
     "badge":"Plan",

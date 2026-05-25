@@ -34,7 +34,7 @@
         </ul>
       </div>
     </div>
-    <a class="cta" href="index.php#planes">Reservar QR</a>
+    <a class="cta" href="index.php#planes" data-i18n="nav.reserve">Reservar QR</a>
   </div>
 </nav>
 <!-- Inline SVG QR helper. Pseudo-QR pattern; same DOM reused. -->
