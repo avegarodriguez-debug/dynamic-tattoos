@@ -3,8 +3,8 @@
 
 <section class="sec-head" data-theme="bone">
 	<div class="wrap">
-		<div class="idx">Legal</div>
-		<h2>Términos y <em>Condiciones</em></h2>
+		<div class="idx" data-i18n="legal.section">Legal</div>
+		<h2 data-i18n-html="legal.terms">Términos y <em>Condiciones</em></h2>
 	</div>
 </section>
 

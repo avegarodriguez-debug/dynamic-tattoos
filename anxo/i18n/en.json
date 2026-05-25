@@ -1,0 +1,58 @@
+{
+  "nav":{
+    "concept":"Concept",
+    "demo":"Demo",
+    "tech":"Technical",
+    "plans":"Plans",
+    "faq":"FAQ"
+  },
+  "hero":{
+    "eyebrow":"Smart ink · Madrid · Launch 2026",
+    "title":"Your story changes<br/>every second.<br/><span class=\"ev\">Your tattoo does too</span>",
+    "lede":"We fuse the permanence of body art with the boundless freedom of the digital universe. <strong>One tattoo on your skin. Infinite stories to tell.</strong>"
+  },
+  "btn":{
+    "primary":"Get your Dynamic Tattoo",
+    "ghost":"See how it works"
+  },
+  "plans":{
+    "title":"Choose how you want to<br/><em>evolve</em>.",
+    "basico":{"name":"Basic","desc":"Link your QR to an image or external URL. Change the destination whenever you want.","button":"Start Basic"},
+    "standard":{"name":"Standard","desc":"Host your videos directly on the platform. More quality, more control.","button":"Activate Standard"},
+    "premium":{"name":"Premium","button":"Reserve Premium"}
+  },
+  "faq":{
+    "header":"Before the needle<br/>touches the <em>skin</em>.",
+    "q1":{"q":"What if the original URL stops existing?","a":"No problem. The tattooed QR always points to your permanent identifier on Dynamic Tattoos. If the external URL dies, enter the dashboard and redirect it. The tattoo keeps working."},
+    "q2":{"q":"How long does a tattooed QR last on skin?","a":"With quality ink and a skilled artist, like any fine tattoo: decades. We use error correction (level H) to tolerate touch-ups, scarring and aging."},
+    "q3":{"q":"Can I cancel the subscription?","a":"Yes, anytime. Your QR will keep working in static redirect mode (the last saved URL). To keep changing the destination, simply reactivate."},
+    "q4":{"q":"Does it work on the wrist?","a":"It works, but curvature can affect readability. We recommend flat areas: inner forearm, outer biceps, calf or chest."},
+    "q5":{"q":"Do I need to be a professional tattoo artist?","a":"No, but we recommend one experienced in fine lines. We send a technical guide and a stencil to your studio."}
+  },
+  "checkout":{
+    "badge":"Plan",
+    "title":"Activate <em>Standard</em>",
+    "pricePeriod":"/ year · billed annually",
+    "labels":{"name":"First name","lastname":"Last name","email":"Email","phone":"Phone (optional)"},
+    "submit":"Subscribe now",
+    "successTitle":"Request received!",
+    "successMsg":"We will contact you within 24 hours. Check your email <strong id=\"coSuccessEmail\"></strong>."
+  },
+  "contact":{
+    "title":"Contact","subtitle":"We respond within 24 hours. No commitments.",
+    "labels":{"name":"Name","email":"Email","subject":"Subject","message":"Message"},
+    "submit":"Send message",
+    "successTitle":"Message sent","successMsg":"Thanks for reaching out. We'll reply as soon as possible to <strong id=\"ctSuccessEmail\"></strong>." 
+  },
+  "footer":{
+    "madeby":"Made with ❤️ by Orbitatecnologica",
+    "copyright":"© 2026 Dynamic Tattoos · Registered trademark"
+  },
+  "legal":{
+    "section":"Legal",
+    "cookies":"Cookies Policy",
+    "privacy":"Privacy Policy",
+    "terms":"Terms & Conditions",
+    "conditions":"General Terms of Contract"
+  }
+}

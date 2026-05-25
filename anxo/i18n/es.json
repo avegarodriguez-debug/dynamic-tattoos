@@ -1,0 +1,57 @@
+{
+  "nav":{
+    "concept":"Concepto",
+    "demo":"Demo",
+    "tech":"Técnico",
+    "plans":"Planes",
+    "faq":"FAQ"
+  },
+  "hero":{
+    "eyebrow":"Tinta inteligente · Madrid · Lanzamiento 2026",
+    "title":"Tu historia cambia<br/>cada segundo.<br/><span class=\"ev\">Tu tatuaje también</span>",
+    "lede":"Fusionamos lo permanente del arte corporal con la libertad absoluta del universo digital. <strong>Un solo tatuaje en tu piel. Infinitas historias por contar.</strong>"
+  },
+  "btn":{
+    "primary":"Haz tu tatuaje dinámico","ghost":"Ver cómo funciona"
+  },
+  "plans":{
+    "title":"Elige cómo quieres<br/><em>evolucionar</em>.",
+    "basico":{"name":"Básico","desc":"Vincula tu QR a una imagen o URL externa. Cambia el destino cuando quieras.","button":"Empezar básico"},
+    "standard":{"name":"Estándar","desc":"Aloja tus videos directamente en la plataforma. Más calidad, más control.","button":"Activar Estándar"},
+    "premium":{"name":"Premium","button":"Reservar PREMIUM"}
+  },
+  "faq":{
+    "header":"Antes de que la aguja<br/>toque la <em>piel</em>.",
+    "q1":{"q":"¿Y si la URL original deja de existir?","a":"No pasa nada. El QR tatuado siempre apunta a tu identificador permanente en Dynamic Tattoos. Si la URL externa muere, entras al panel y rediriges a una nueva. El tatuaje sigue funcionando."},
+    "q2":{"q":"¿Cuánto dura un QR tatuado en la piel?","a":"Con tinta de calidad y un buen tatuador, igual que cualquier tatuaje fino: décadas. Usamos corrección de error nivel H (30%) para tolerar retoques, cicatrización y envejecimiento de la piel."},
+    "q3":{"q":"¿Puedo cancelar la suscripción?","a":"Sí, en cualquier momento. Tu QR seguirá funcionando en modo de redirección estática (la última URL guardada). Si quieres seguir cambiando el destino, basta con reactivar."},
+    "q4":{"q":"¿Funciona si lo tatúo en la muñeca?","a":"Funciona, pero la curvatura puede afectar la lectura. Recomendamos zonas planas: antebrazo interno, bíceps exterior, pantorrilla o pectoral."},
+    "q5":{"q":"¿Necesito ser tatuador profesional?","a":"No, pero te recomendamos uno con experiencia en líneas finas. Enviamos guía técnica y plantilla a tu estudio."}
+  },
+  "checkout":{
+    "badge":"Plan",
+    "title":"Activar <em>Estándar</em>",
+    "pricePeriod":"/ año · facturado anual",
+    "labels":{"name":"Nombre","lastname":"Apellidos","email":"Email","phone":"Teléfono (opcional)"},
+    "submit":"Contratar ahora",
+    "successTitle":"¡Solicitud recibida!",
+    "successMsg":"Te contactaremos en menos de 24 horas. Revisa tu email <strong id=\"coSuccessEmail\"></strong>."
+  },
+  "contact":{
+    "title":"Contacto","subtitle":"Respuesta en menos de 24 horas. Sin compromisos.",
+    "labels":{"name":"Nombre","email":"Email","subject":"Asunto","message":"Mensaje"},
+    "submit":"Enviar mensaje",
+    "successTitle":"Mensaje enviado","successMsg":"Gracias por contactarnos. Te responderemos lo antes posible en <strong id=\"ctSuccessEmail\"></strong>." 
+  },
+  "footer":{
+    "madeby":"Hecho con ❤️ por Orbitatecnologica",
+    "copyright":"© 2026 Dynamic Tattoos · Marca registrada"
+  },
+  "legal":{
+    "section":"Legal",
+    "cookies":"Política de Cookies",
+    "privacy":"Política de Privacidad",
+    "terms":"Términos y Condiciones",
+    "conditions":"Condiciones Generales de Contratación"
+  }
+}

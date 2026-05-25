@@ -116,6 +116,8 @@
         const labelSpan = document.createElement('span'); labelSpan.className = 'nav-label'; labelSpan.textContent = label;
         btn.appendChild(labelSpan);
         btn.appendChild(document.createTextNode(' ▾'));
+        // notify global listeners (i18n loader)
+        try{ window.dispatchEvent(new CustomEvent('dt:langchange',{detail:{lang}})); }catch(e){}
       }
       // Initialize
       setLang(getSaved());

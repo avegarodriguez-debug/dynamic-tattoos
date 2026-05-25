@@ -77,14 +77,15 @@
       </div>
     </div>
     <div class="row">
-      <div>© 2026 Dynamic Tattoos · Marca registrada</div>
-      <div>Hecho con ❤️ por <a href="https://orbitatecnologica.com" target="_blank" rel="noopener noreferrer">Orbitatecnologica</a></div>
+        <div data-i18n="footer.copyright">© 2026 Dynamic Tattoos · Marca registrada</div>
+        <div><span data-i18n="footer.madeby">Hecho con ❤️ por Orbitatecnologica</span></div>
       
     </div>
   </div>
 </footer>
 <?php include 'includes/contacto.php'; ?>
 <script src="js/contacto.js"></script>
+<script src="js/i18n.js"></script>
 <style>
   .social-link{color:inherit;opacity:.95;display:inline-flex;align-items:center;justify-content:center;padding:6px;border-radius:8px;transition:transform .12s ease,color .12s ease,opacity .12s ease}
   .social-link svg{display:block;width:20px;height:20px}

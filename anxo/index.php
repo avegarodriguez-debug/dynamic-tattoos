@@ -44,18 +44,18 @@
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="eyebrow">Tinta inteligente · Madrid · Lanzamiento 2026</div>
-        <h1 class="head">
+        <div class="eyebrow" data-i18n="hero.eyebrow">Tinta inteligente · Madrid · Lanzamiento 2026</div>
+        <h1 class="head" data-i18n-html="hero.title">
           Tu historia cambia<br/>cada segundo.<br/>
           <span class="ev">Tu tatuaje también<span class="pdot"></span></span>
         </h1>
-        <p class="hero-lede">
+        <p class="hero-lede" data-i18n="hero.lede">
           Fusionamos lo permanente del arte corporal con la libertad absoluta del universo digital.
           <strong>Un solo tatuaje en tu piel. Infinitas historias por contar.</strong>
         </p>
         <div class="hero-ctas">
-          <a class="btn btn-primary" href="#planes">Haz tu tatuaje dinámico <span class="arrow">→</span></a>
-          <a class="btn btn-ghost" href="#demo">Ver cómo funciona</a>
+          <a class="btn btn-primary" href="#planes"><span data-i18n="btn.primary">Haz tu tatuaje dinámico</span> <span class="arrow">→</span></a>
+          <a class="btn btn-ghost" href="#demo"><span data-i18n="btn.ghost">Ver cómo funciona</span></a>
         </div>
 
         <div class="hero-meta">
@@ -430,15 +430,15 @@
 <section class="pricing" id="planes" data-theme="paper">
   <div class="wrap">
     <div class="sec-head">
-      <div class="idx">05 <span class="ruby">/</span> Planes</div>
-      <h2>Elige cómo quieres<br/><em>evolucionar</em>.</h2>
+      <div class="idx">05 <span class="ruby">/</span> <span data-i18n="nav.plans">Planes</span></div>
+      <h2 data-i18n-html="plans.title">Elige cómo quieres<br/><em>evolucionar</em>.</h2>
     </div>
     <div style="height:50px"></div>
     <div class="plans">
       <div class="plan">
-        <span class="tag">Básico</span>
-        <h3>Básico</h3>
-        <p class="desc">Vincula tu QR a una imagen o URL externa. Cambia el destino cuando quieras.</p>
+        <span class="tag" data-i18n="plans.basico.name">Básico</span>
+        <h3 data-i18n="plans.basico.name">Básico</h3>
+        <p class="desc" data-i18n="plans.basico.desc">Vincula tu QR a una imagen o URL externa. Cambia el destino cuando quieras.</p>
         <div>
           <div class="price">35<span class="price-curr">€ / AÑO</span></div>
           
@@ -450,13 +450,13 @@
           <li>Panel web de gestión</li>
           <li>Estadísticas básicas de escaneo</li>
         </ul>
-        <button class="btn btn-primary" onclick="openCheckout('basico')" type="button">Empezar básico <span class="arrow">→</span></button>
+        <button class="btn btn-primary" onclick="openCheckout('basico')" type="button"><span data-i18n="plans.basico.button">Empezar básico</span> <span class="arrow">→</span></button>
       </div>
 
       <div class="plan"> <!---También está el estilo plan featured-->
-        <span class="tag">Estándar</span>
-        <h3>Estándar</h3>
-        <p class="desc mute">Aloja tus videos directamente en la plataforma. Más calidad, más control.</p>
+        <span class="tag" data-i18n="plans.standard.name">Estándar</span>
+        <h3 data-i18n="plans.standard.name">Estándar</h3>
+        <p class="desc mute" data-i18n="plans.standard.desc">Aloja tus videos directamente en la plataforma. Más calidad, más control.</p>
         <div>
           <div class="price">55<span class="price-curr">€ / AÑO</span></div>
           
@@ -468,13 +468,13 @@
           <li>Programación de cambios por fecha</li>
           <li>Soporte prioritario</li>
         </ul>
-        <button class="btn btn-primary" onclick="openCheckout('premium')" type="button">Activar Estándar <span class="arrow">→</span></button>
+        <button class="btn btn-primary" onclick="openCheckout('premium')" type="button"><span data-i18n="plans.standard.button">Activar Estándar</span> <span class="arrow">→</span></button>
       </div>
 
       <div class="plan">
-        <span class="tag">PREMIUM</span>
-        <h3>Premium</h3>
-        <p class="desc">Una página de perfil completa, estilo feed, donde gestionas múltiples fotos y videos.</p>
+        <span class="tag" data-i18n="plans.premium.name">PREMIUM</span>
+        <h3 data-i18n="plans.premium.name">Premium</h3>
+        <p class="desc" data-i18n="plans.premium.desc">Una página de perfil completa, estilo feed, donde gestionas múltiples fotos y videos.</p>
         <div>
           <div class="price">65<span class="price-curr">€ / AÑO</span></div>
           
@@ -487,7 +487,7 @@
           <li>Dominio propio opcional</li>
           <li>Acceso anticipado a 3×3 cm</li>
         </ul>
-        <button class="btn btn-primary" onclick="openCheckout('top')" type="button">Reservar PREMIUM <span class="arrow">→</span></button>
+        <button class="btn btn-primary" onclick="openCheckout('top')" type="button"><span data-i18n="plans.premium.button">Reservar PREMIUM</span> <span class="arrow">→</span></button>
       </div>
     </div>
   </div>
@@ -497,26 +497,26 @@
 <section class="faq" id="faq" data-theme="bone">
   <div class="wrap">
     <div class="sec-head">
-      <div class="idx">06 <span class="ruby">/</span> Dudas frecuentes</div>
-      <h2>Antes de que la aguja<br/>toque la <em>piel</em>.</h2>
+      <div class="idx">06 <span class="ruby">/</span> <span data-i18n="nav.faq">Dudas frecuentes</span></div>
+      <h2 data-i18n-html="faq.header">Antes de que la aguja<br/>toque la <em>piel</em>.</h2>
     </div>
     <div style="height:30px"></div>
     <div class="faq-grid" id="faqList">
       <button class="q open">
-        <div class="q-head"><div class="q-num">01</div><div class="q-t">¿Y si la URL original deja de existir?</div><div class="q-x">+</div></div>
-        <div class="q-body"><div class="q-body-inner">No pasa nada. El QR tatuado siempre apunta a tu identificador permanente en Dynamic Tattoos. Si la URL externa muere, entras al panel y rediriges a una nueva. El tatuaje sigue funcionando.</div></div>
+        <div class="q-head"><div class="q-num">01</div><div class="q-t" data-i18n="faq.q1.q">¿Y si la URL original deja de existir?</div><div class="q-x">+</div></div>
+        <div class="q-body"><div class="q-body-inner" data-i18n="faq.q1.a">No pasa nada. El QR tatuado siempre apunta a tu identificador permanente en Dynamic Tattoos. Si la URL externa muere, entras al panel y rediriges a una nueva. El tatuaje sigue funcionando.</div></div>
       </button>
       <button class="q">
-        <div class="q-head"><div class="q-num">02</div><div class="q-t">¿Cuánto dura un QR tatuado en la piel?</div><div class="q-x">+</div></div>
-        <div class="q-body"><div class="q-body-inner">Con tinta de calidad y un buen tatuador, igual que cualquier tatuaje fino: décadas. Usamos corrección de error nivel H (30%) para tolerar retoques, cicatrización y envejecimiento de la piel.</div></div>
+        <div class="q-head"><div class="q-num">02</div><div class="q-t" data-i18n="faq.q2.q">¿Cuánto dura un QR tatuado en la piel?</div><div class="q-x">+</div></div>
+        <div class="q-body"><div class="q-body-inner" data-i18n="faq.q2.a">Con tinta de calidad y un buen tatuador, igual que cualquier tatuaje fino: décadas. Usamos corrección de error nivel H (30%) para tolerar retoques, cicatrización y envejecimiento de la piel.</div></div>
       </button>
       <button class="q">
-        <div class="q-head"><div class="q-num">03</div><div class="q-t">¿Puedo cancelar la suscripción?</div><div class="q-x">+</div></div>
-        <div class="q-body"><div class="q-body-inner">Sí, en cualquier momento. Tu QR seguirá funcionando en modo de redirección estática (la última URL guardada). Si quieres seguir cambiando el destino, basta con reactivar.</div></div>
+        <div class="q-head"><div class="q-num">03</div><div class="q-t" data-i18n="faq.q3.q">¿Puedo cancelar la suscripción?</div><div class="q-x">+</div></div>
+        <div class="q-body"><div class="q-body-inner" data-i18n="faq.q3.a">Sí, en cualquier momento. Tu QR seguirá funcionando en modo de redirección estática (la última URL guardada). Si quieres seguir cambiando el destino, basta con reactivar.</div></div>
       </button>
       <button class="q">
-        <div class="q-head"><div class="q-num">04</div><div class="q-t">¿Funciona si lo tatúo en la muñeca?</div><div class="q-x">+</div></div>
-        <div class="q-body"><div class="q-body-inner">Funciona, pero la curvatura puede afectar la lectura. Recomendamos zonas planas: antebrazo interno, bíceps exterior, pantorrilla o pectoral. Consulta nuestra guía de zonificación arriba.</div></div>
+        <div class="q-head"><div class="q-num">04</div><div class="q-t" data-i18n="faq.q4.q">¿Funciona si lo tatúo en la muñeca?</div><div class="q-x">+</div></div>
+        <div class="q-body"><div class="q-body-inner" data-i18n="faq.q4.a">Funciona, pero la curvatura puede afectar la lectura. Recomendamos zonas planas: antebrazo interno, bíceps exterior, pantorrilla o pectoral. Consulta nuestra guía de zonificación arriba.</div></div>
       </button>
       <button class="q">
         <div class="q-head"><div class="q-num">05</div><div class="q-t">¿Necesito ser tatuador profesional?</div><div class="q-x">+</div></div>
@@ -541,7 +541,7 @@
       <h3 class="co-title" id="coPlanTitle">Activar <em>Estándar</em></h3>
       <div class="co-price-row">
         <span class="co-price" id="coPlanPrice">€9.90</span>
-        <span class="co-period">/ año · facturado anual</span>
+        <span class="co-period" data-i18n="checkout.pricePeriod">/ año · facturado anual</span>
       </div>
     </div>
 
@@ -551,21 +551,21 @@
     <div class="co-form" id="coForm">
       <div class="co-field-row">
         <div class="co-field">
-          <label>Nombre</label>
-          <input type="text" id="coName" placeholder="Tu nombre" autocomplete="name" />
+          <label data-i18n="checkout.labels.name">Nombre</label>
+          <input type="text" id="coName" data-i18n-placeholder="checkout.labels.name" placeholder="Tu nombre" autocomplete="name" />
         </div>
         <div class="co-field">
-          <label>Apellidos</label>
-          <input type="text" id="coLastname" placeholder="Apellidos" autocomplete="family-name" />
+          <label data-i18n="checkout.labels.lastname">Apellidos</label>
+          <input type="text" id="coLastname" data-i18n-placeholder="checkout.labels.lastname" placeholder="Apellidos" autocomplete="family-name" />
         </div>
       </div>
       <div class="co-field">
-        <label>Email</label>
-        <input type="email" id="coEmail" placeholder="tu@email.com" autocomplete="email" />
+        <label data-i18n="checkout.labels.email">Email</label>
+        <input type="email" id="coEmail" data-i18n-placeholder="checkout.labels.email" placeholder="tu@email.com" autocomplete="email" />
       </div>
       <div class="co-field">
-        <label>Teléfono <span class="co-optional">(opcional)</span></label>
-        <input type="tel" id="coPhone" placeholder="+34 600 000 000" autocomplete="tel" />
+        <label data-i18n-html="checkout.labels.phone">Teléfono <span class="co-optional">(opcional)</span></label>
+        <input type="tel" id="coPhone" data-i18n-placeholder="checkout.labels.phone" placeholder="+34 600 000 000" autocomplete="tel" />
       </div>
 
       <div class="co-divider"></div>
@@ -573,7 +573,7 @@
       <!-- Stripe payment element placeholder -->
       <div class="stripe-section">
         <div class="stripe-header">
-          <span class="stripe-label">Pago seguro</span>
+          <span class="stripe-label" data-i18n="checkout.secureLabel">Pago seguro</span>
           <svg class="stripe-logo-svg" viewBox="0 0 60 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M28.3 10.8c-2.1-.5-3.1-.8-3.1-1.6 0-.7.7-1.1 1.8-1.1 1.7 0 3.5.6 4.9 1.5l1.4-3.1c-1.5-1-3.6-1.6-6.2-1.6-3.7 0-6.3 1.9-6.3 5 0 3.4 2.8 4.3 5.2 4.9 2 .5 3 .9 3 1.7 0 .8-.8 1.2-2 1.2-1.9 0-4.1-.8-5.6-2l-1.5 3.1c1.7 1.3 4.2 2.1 7 2.1 4 0 6.6-1.9 6.6-5.1 0-3.2-2.6-4.3-5.2-5z" fill="#635BFF"/>
             <path d="M38.2 4.9l-4.3 15.3h4.2l.8-2.8h4.4l.8 2.8H48L43.7 4.9h-5.5zm1.7 9.4l1.4-5.1 1.4 5.1h-2.8z" fill="#635BFF"/>
@@ -614,14 +614,14 @@
           </div>
         </div>
 
-        <div class="stripe-ssl">
+        <div class="stripe-ssl" data-i18n="checkout.ssl">
           <svg width="12" height="14" viewBox="0 0 12 14" fill="none"><rect x="1" y="6" width="10" height="8" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 6V4.5a2.5 2.5 0 0 1 5 0V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
           Cifrado SSL · Procesado por Stripe
         </div>
       </div>
 
       <button class="co-submit-btn" id="coSubmitBtn" onclick="submitCheckout()">
-        <span id="coSubmitText">Contratar ahora</span>
+        <span id="coSubmitText" data-i18n="checkout.submit">Contratar ahora</span>
         <span class="co-submit-price" id="coSubmitPrice">55.00€/año</span>
       </button>
 
@@ -631,9 +631,9 @@
     <!-- Estado de éxito -->
     <div class="co-success" id="coSuccess" style="display:none">
       <div class="co-success-icon">✓</div>
-      <h4>¡Solicitud recibida!</h4>
-      <p>Te contactaremos en menos de 24 horas para completar tu activación. Revisa tu email <strong id="coSuccessEmail"></strong>.</p>
-      <button class="co-submit-btn" onclick="closeCheckout()">Cerrar</button>
+      <h4 data-i18n="checkout.successTitle">¡Solicitud recibida!</h4>
+      <p data-i18n-html="checkout.successMsg">Te contactaremos en menos de 24 horas para completar tu activación. Revisa tu email <strong id="coSuccessEmail"></strong>.</p>
+      <button class="co-submit-btn" onclick="closeCheckout()" data-i18n="contact.close">Cerrar</button>
     </div>
   </div>
 </div>
