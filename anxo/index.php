@@ -199,26 +199,26 @@
         <div class="destinations" id="destinations">
           <button class="dest active" data-key="portfolio" data-url="portfolio.miestudio.com">
             <div class="n">01</div>
-            <div class="t">Tu web profesional<small>Para clientes, marca personal, currículum visual</small></div>
-            <div class="a">Activo →</div>
+            <div class="t" data-i18n-html="demo.portfolio">Tu web profesional<small>Para clientes, marca personal, currículum visual</small></div>
+            <div class="a" data-i18n="demo.active">Activo →</div>
           </button>
           <button class="dest" data-key="instagram" data-url="instagram.com/aria.ink">
             <div class="n">02</div>
-            <div class="t">Tu red social favorita<small>Instagram, TikTok, LinkedIn · siempre al día</small></div>
-            <div class="a">Cambiar →</div>
+            <div class="t" data-i18n-html="demo.instagram">Tu red social favorita<small>Instagram, TikTok, LinkedIn · siempre al día</small></div>
+            <div class="a" data-i18n="demo.change">Cambiar →</div>
           </button>
           <button class="dest" data-key="video" data-url="dyn.tt/u/aria/baile-2026">
             <div class="n">03</div>
-            <div class="t">Un video privado<small>Una dedicatoria, un recuerdo, un mensaje</small></div>
-            <div class="a">Cambiar →</div>
+            <div class="t" data-i18n-html="demo.video">Un video privado<small>Una dedicatoria, un recuerdo, un mensaje</small></div>
+            <div class="a" data-i18n="demo.change">Cambiar →</div>
           </button>
           <button class="dest" data-key="profile" data-url="dyn.tt/aria">
             <div class="n">04</div>
-            <div class="t">Tu página Dynamic<small>Galería propia · feed multimedia · enlaces</small></div>
-            <div class="a">Cambiar →</div>
+            <div class="t" data-i18n-html="demo.profile">Tu página Dynamic<small>Galería propia · feed multimedia · enlaces</small></div>
+            <div class="a" data-i18n="demo.change">Cambiar →</div>
           </button>
         </div>
-        <div class="demo-note">El QR tatuado siempre es el mismo · cambia solo el destino.</div>
+        <div class="demo-note" data-i18n="demo.note">El QR tatuado siempre es el mismo · cambia solo el destino.</div>
       </div>
 
       <div>
@@ -232,8 +232,8 @@
               </div>
             </div>
             <div class="content" id="phoneFrame">
-              <span class="frame-label" id="frameLabel">DESTINO ACTUAL</span>
-              <div class="frame-title" id="frameTitle">Tu web <em>profesional</em></div>
+              <span class="frame-label" id="frameLabel" data-i18n="demo.frameLabel">DESTINO ACTUAL</span>
+              <div class="frame-title" id="frameTitle" data-i18n-html="demo.frameTitle">Tu web <em>profesional</em></div>
               <div class="media no-img" id="frameMedia">
                 <img class="frame-img" id="frameImg" alt="" style="display:none" />
                 <div class="stripes"></div>
@@ -241,10 +241,10 @@
                 <div class="ph-icon" id="frameIcon">¶</div>
               </div>
               <div class="meta">
-                <span id="frameUrl">portfolio.miestudio.com</span>
-                <span class="pill">en vivo</span>
+                <span id="frameUrl" data-i18n="demo.frameUrl">portfolio.miestudio.com</span>
+                <span class="pill" data-i18n="demo.framePill">en vivo</span>
               </div>
-              <div style="font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ash)">Última actualización · hace 2 min</div>
+              <div style="font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ash)" data-i18n="demo.lastUpdated">Última actualización · hace 2 min</div>
             </div>
             <div class="home-indicator"></div>
           </div>

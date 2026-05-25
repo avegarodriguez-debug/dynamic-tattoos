@@ -52,7 +52,19 @@
     "title":"One tattoo.<br/>A thousand <em>destinations</em>.",
     "lede1":"Your tattoo doesn't change. What changes is <strong>where it points</strong>.",
     "lede2":"When someone scans your QR with the camera, we send them to the URL you choose <strong>in that moment</strong>: your portfolio, a video, your Instagram, a private landing. And you change it as many times as you want from your panel — in seconds, without returning to the studio.",
-    "eyebrow":"Tap an option <span class=\"ruby\">·</span> watch the screen"
+    "eyebrow":"Tap an option <span class=\"ruby\">·</span> watch the screen",
+    "portfolio":"Your professional website<small>For clients, personal brand, visual CV</small>",
+    "instagram":"Your favorite social network<small>Instagram, TikTok, LinkedIn · always updated</small>",
+    "video":"A private video<small>A dedication, a memory, a message</small>",
+    "profile":"Your Dynamic page<small>Own gallery · multimedia feed · links</small>",
+    "active":"Active →",
+    "change":"Change →",
+    "note":"The tattooed QR is always the same — only the destination changes.",
+    "frameLabel":"CURRENT DESTINATION",
+    "frameTitle":"Your professional website",
+    "frameUrl":"portfolio.miestudio.com",
+    "framePill":"live",
+    "lastUpdated":"Last update · 2 min ago"
   },
   "btn":{
     "primary":"Get your Dynamic Tattoo",
@@ -62,7 +74,7 @@
     "title":"Choose how you want to<br/><em>evolve</em>.",
     "basico":{"name":"Basic","desc":"Link your QR to an image or external URL. Change the destination whenever you want.","button":"Start Basic"},
     "standard":{"name":"Standard","desc":"Host your videos directly on the platform. More quality, more control.","button":"Activate Standard"},
-    "premium":{"name":"Premium","button":"Reserve Premium"}
+    "premium":{"name":"Premium","desc":"A full profile page, feed-style, where you manage multiple photos and videos.","button":"Reserve Premium"}
   },
   "faq":{
     "header":"Before the needle<br/>touches the <em>skin</em>.",
@@ -76,16 +88,19 @@
     "badge":"Plan",
     "title":"Activate <em>Standard</em>",
     "pricePeriod":"/ year · billed annually",
+    "secureLabel":"Secure payment",
     "labels":{"name":"First name","lastname":"Last name","email":"Email","phone":"Phone (optional)"},
     "submit":"Subscribe now",
     "successTitle":"Request received!",
     "successMsg":"We will contact you within 24 hours. Check your email <strong id=\"coSuccessEmail\"></strong>."
+    ,"ssl":"SSL encrypted · Processed by Stripe"
   },
   "contact":{
     "title":"Contact","subtitle":"We respond within 24 hours. No commitments.",
     "labels":{"name":"Name","email":"Email","subject":"Subject","message":"Message"},
     "submit":"Send message",
-    "successTitle":"Message sent","successMsg":"Thanks for reaching out. We'll reply as soon as possible to <strong id=\"ctSuccessEmail\"></strong>." 
+    "successTitle":"Message sent","successMsg":"Thanks for reaching out. We'll reply as soon as possible to <strong id=\"ctSuccessEmail\"></strong>.",
+    "close":"Close"
   },
   "footer":{
     "madeby":"Made with ❤️ by Orbitatecnologica",

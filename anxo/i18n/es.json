@@ -52,7 +52,19 @@
     "title":"Un tatuaje.<br/>Mil <em>destinos</em>.",
     "lede1":"Tu tatuaje no cambia. Lo que cambia es <strong>a dónde lleva</strong>.",
     "lede2":"Cuando alguien escanea tu QR con la cámara, lo enviamos a la URL que tú elijas <strong>en ese momento</strong>: tu portfolio, un video, tu Instagram, una landing privada. Y lo cambias las veces que quieras desde tu panel — en segundos, sin volver al estudio.",
-    "eyebrow":"Pulsa una opción <span class=\"ruby\">·</span> mira la pantalla"
+    "eyebrow":"Pulsa una opción <span class=\"ruby\">·</span> mira la pantalla",
+    "portfolio":"Tu web profesional<small>Para clientes, marca personal, currículum visual</small>",
+    "instagram":"Tu red social favorita<small>Instagram, TikTok, LinkedIn · siempre al día</small>",
+    "video":"Un video privado<small>Una dedicatoria, un recuerdo, un mensaje</small>",
+    "profile":"Tu página Dynamic<small>Galería propia · feed multimedia · enlaces</small>",
+    "active":"Activo →",
+    "change":"Cambiar →",
+    "note":"El QR tatuado siempre es el mismo · cambia solo el destino.",
+    "frameLabel":"DESTINO ACTUAL",
+    "frameTitle":"Tu web <em>profesional</em>",
+    "frameUrl":"portfolio.miestudio.com",
+    "framePill":"en vivo",
+    "lastUpdated":"Última actualización · hace 2 min"
   },
   "btn":{
     "primary":"Haz tu tatuaje dinámico","ghost":"Ver cómo funciona"
