@@ -21,16 +21,16 @@
           <span class="nav-label">Español</span>&nbsp;▾
         </button>
         <ul class="lang-menu" id="navLangMenu" role="menu" hidden>
-          <li role="none"><button role="menuitem" data-lang="en"><span class="flag-badge" aria-hidden="true">🇬🇧</span>English</button></li>
-          <li role="none"><button role="menuitem" data-lang="zh"><span class="flag-badge" aria-hidden="true">🇨🇳</span>中文 (简体)</button></li>
-          <li role="none"><button role="menuitem" data-lang="hi"><span class="flag-badge" aria-hidden="true">🇮🇳</span>हिन्दी</button></li>
-          <li role="none"><button role="menuitem" data-lang="es"><span class="flag-badge" aria-hidden="true">🇪🇸</span>Español</button></li>
-          <li role="none"><button role="menuitem" data-lang="ar"><span class="flag-badge" aria-hidden="true">🇸🇦</span>العربية</button></li>
-          <li role="none"><button role="menuitem" data-lang="fr"><span class="flag-badge" aria-hidden="true">🇫🇷</span>Français</button></li>
-          <li role="none"><button role="menuitem" data-lang="bn"><span class="flag-badge" aria-hidden="true">🇧🇩</span>বাংলা</button></li>
-          <li role="none"><button role="menuitem" data-lang="ru"><span class="flag-badge" aria-hidden="true">🇷🇺</span>Русский</button></li>
-          <li role="none"><button role="menuitem" data-lang="pt"><span class="flag-badge" aria-hidden="true">🇵🇹</span>Português</button></li>
-          <li role="none"><button role="menuitem" data-lang="ur"><span class="flag-badge" aria-hidden="true">🇵🇰</span>اردو</button></li>
+          <li role="none"><button role="menuitem" data-lang="en"><img class="flag-badge" aria-hidden="true" src="assets/flags/gb.svg" alt="">English</button></li>
+          <li role="none"><button role="menuitem" data-lang="zh"><img class="flag-badge" aria-hidden="true" src="assets/flags/cn.svg" alt="">中文 (简体)</button></li>
+          <li role="none"><button role="menuitem" data-lang="hi"><img class="flag-badge" aria-hidden="true" src="assets/flags/in.svg" alt="">हिन्दी</button></li>
+          <li role="none"><button role="menuitem" data-lang="es"><img class="flag-badge" aria-hidden="true" src="assets/flags/es.svg" alt="">Español</button></li>
+          <li role="none"><button role="menuitem" data-lang="ar"><img class="flag-badge" aria-hidden="true" src="assets/flags/sa.svg" alt="">العربية</button></li>
+          <li role="none"><button role="menuitem" data-lang="fr"><img class="flag-badge" aria-hidden="true" src="assets/flags/fr.svg" alt="">Français</button></li>
+          <li role="none"><button role="menuitem" data-lang="bn"><img class="flag-badge" aria-hidden="true" src="assets/flags/bd.svg" alt="">বাংলা</button></li>
+          <li role="none"><button role="menuitem" data-lang="ru"><img class="flag-badge" aria-hidden="true" src="assets/flags/ru.svg" alt="">Русский</button></li>
+          <li role="none"><button role="menuitem" data-lang="pt"><img class="flag-badge" aria-hidden="true" src="assets/flags/pt.svg" alt="">Português</button></li>
+          <li role="none"><button role="menuitem" data-lang="ur"><img class="flag-badge" aria-hidden="true" src="assets/flags/pk.svg" alt="">اردو</button></li>
         </ul>
       </div>
     </div>
@@ -72,6 +72,7 @@
     .flag-badge{font-family: 'Segoe UI Emoji', 'Noto Color Emoji', 'Apple Color Emoji', 'EmojiOne Mozilla', 'Twemoji Mozilla', system-ui, sans-serif}
     .nav-flag svg,.flag-badge svg{width:24px;height:16px;display:block}
     .nav-flag{display:inline-block;margin-right:8px;font-size:18px;line-height:1;text-align:center}
+    .flag-badge img, .nav-flag img{width:24px;height:16px;display:inline-block;vertical-align:middle;border-radius:3px}
     .lang-btn{background:transparent;border:1px solid rgba(0,0,0,0.06);padding:8px 12px;border-radius:8px;color:inherit;cursor:pointer;display:inline-flex;align-items:center;gap:8px;font-size:14px}
     .lang-menu{position:absolute;right:0;top:calc(100% + 8px);list-style:none;margin:0;padding:6px 0;background:#fff;color:#111;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,0.12);min-width:220px;z-index:999;opacity:0;transform:translateY(-6px) scale(.98);transform-origin:top right;transition:opacity .18s ease,transform .18s ease;pointer-events:none}
     .lang-menu.open{opacity:1;transform:translateY(0) scale(1);pointer-events:auto}
