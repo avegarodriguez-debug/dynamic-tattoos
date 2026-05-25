@@ -119,10 +119,10 @@
 <section class="problem" id="problema" data-theme="ink">
   <div class="wrap">
     <div class="sec-head">
-      <div class="idx">00 <span class="ruby">/</span> El problema</div>
-      <h2>El mundo evoluciona.<br/>¿Por qué tu piel<br/>tendría que <em>quedarse&nbsp;atrás</em>?</h2>
+      <div class="idx">00 <span class="ruby">/</span> <span data-i18n="problem.idx">El problema</span></div>
+      <h2 data-i18n-html="problem.title">El mundo evoluciona.<br/>¿Por qué tu piel<br/>tendría que <em>quedarse&nbsp;atrás</em>?</h2>
     </div>
-    <p class="lead">
+    <p class="lead" data-i18n-html="problem.lede">
       Hasta hoy, tatuarse significaba tomar una decisión <em>estática</em> para toda la vida.
       Un nombre. Una etapa. Una red social que hoy te define y mañana es solo un recuerdo.
     </p>
@@ -140,8 +140,8 @@
   <line x1="35" y1="9" x2="29" y2="15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
   <line x1="9" y1="35" x2="15" y2="29" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
 </svg></div>
-        <h4>Sesiones de láser interminables</h4>
-        <p>Meses de dolor, irritación y promesas a medias. Caro, lento, y casi nunca completo.</p>
+        <h4 data-i18n="problem.card1.title">Sesiones de láser interminables</h4>
+        <p data-i18n="problem.card1.desc">Meses de dolor, irritación y promesas a medias. Caro, lento, y casi nunca completo.</p>
       </div>
       <div class="pain">
         <div class="ic ic-svg"><svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
@@ -151,8 +151,8 @@
   <path d="M18 28 L22 32 L20 36 C18.5 38 16 38 14 37 C12 36 11.5 34 12 32 Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
   <line x1="26" y1="16" x2="20" y2="22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
 </svg></div>
-        <h4>Un cover-up más grande y oscuro</h4>
-        <p>Tapar con más tinta. Aceptar un diseño que no elegiste solo para esconder el anterior.</p>
+        <h4 data-i18n="problem.card2.title">Un cover-up más grande y oscuro</h4>
+        <p data-i18n="problem.card2.desc">Tapar con más tinta. Aceptar un diseño que no elegiste solo para esconder el anterior.</p>
       </div>
       <div class="pain">
         <div class="ic ic-svg"><svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="36">
@@ -163,11 +163,11 @@
   <circle cx="22" cy="19" r="4" stroke="currentColor" stroke-width="1.8" fill="none"/>
   <line x1="19" y1="24" x2="25" y2="24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
 </svg></div>
-        <h4>Vivir con arrepentimiento</h4>
-        <p>Mirarse al espejo cada mañana y recordar a alguien — o algo — que ya no eres.</p>
+        <h4 data-i18n="problem.card3.title">Vivir con arrepentimiento</h4>
+        <p data-i18n="problem.card3.desc">Mirarse al espejo cada mañana y recordar a alguien — o algo — que ya no eres.</p>
       </div>
     </div>
-    <div class="problem-kicker">Eso se <em>terminó</em>.</div>
+    <div class="problem-kicker" data-i18n-html="problem.kicker">Eso se <em>terminó</em>.</div>
   </div>
 </section>
 
@@ -175,15 +175,15 @@
 <section class="demo" id="demo" data-theme="bone">
   <div class="wrap">
     <div class="sec-head">
-      <div class="idx">01 <span class="ruby">/</span> La solución</div>
-      <h2>Un tatuaje.<br/>Mil <em>destinos</em>.</h2>
+      <div class="idx">01 <span class="ruby">/</span> <span data-i18n="demo.idx">La solución</span></div>
+      <h2 data-i18n-html="demo.title">Un tatuaje.<br/>Mil <em>destinos</em>.</h2>
     </div>
 
     <div style="height:30px"></div>
-    <p style="max-width:720px;font-size:18px;line-height:1.55;margin:0 0 8px;font-weight:500">
+    <p data-i18n-html="demo.lede1" style="max-width:720px;font-size:18px;line-height:1.55;margin:0 0 8px;font-weight:500">
       Tu tatuaje no cambia. Lo que cambia es <strong>a dónde lleva</strong>.
     </p>
-    <p style="max-width:720px;font-size:16px;line-height:1.6;opacity:.78;margin:0">
+    <p data-i18n-html="demo.lede2" style="max-width:720px;font-size:16px;line-height:1.6;opacity:.78;margin:0">
       Cuando alguien escanea tu QR con la cámara, lo enviamos a la URL que tú elijas <strong>en ese momento</strong>:
       tu portfolio, un video, tu Instagram, una landing privada. Y lo cambias las veces que quieras desde tu panel —
       en segundos, sin volver al estudio.
@@ -193,7 +193,7 @@
 
     <div class="demo-grid">
       <div>
-        <div class="eyebrow" style="color:inherit;opacity:.7;margin-bottom:18px">
+        <div class="eyebrow" style="color:inherit;opacity:.7;margin-bottom:18px" data-i18n="demo.eyebrow">
           Pulsa una opción <span class="ruby">·</span> mira la pantalla
         </div>
         <div class="destinations" id="destinations">
@@ -258,28 +258,28 @@
 <section class="steps" id="concepto" data-theme="paper">
   <div class="wrap">
     <div class="sec-head">
-      <div class="idx">02 <span class="ruby">/</span> Cómo funciona</div>
-      <h2>Tu vida en movimiento,<br/>directo en tu <em>piel</em>.</h2>
+      <div class="idx">02 <span class="ruby">/</span> <span data-i18n="steps.idx">Cómo funciona</span></div>
+      <h2 data-i18n-html="steps.title">Tu vida en movimiento,<br/>directo en tu <em>piel</em>.</h2>
     </div>
     <div style="height:40px"></div>
     <div class="steps-grid">
       <div class="step">
         <div class="sn">0<em>1</em></div>
-        <h3>Escanea el arte</h3>
-        <p>Cualquiera puede acercar su smartphone a tu tatuaje. Diseñado bajo estándares artísticos estrictos: línea limpia, contraste pleno, lectura instantánea.</p>
-        <div class="stag">1 segundo · cualquier cámara</div>
+        <h3 data-i18n="steps.step1.title">Escanea el arte</h3>
+        <p data-i18n="steps.step1.desc">Cualquiera puede acercar su smartphone a tu tatuaje. Diseñado bajo estándares artísticos estrictos: línea limpia, contraste pleno, lectura instantánea.</p>
+        <div class="stag" data-i18n="steps.step1.stag">1 segundo · cualquier cámara</div>
       </div>
       <div class="step">
         <div class="sn">0<em>2</em></div>
-        <h3>Descubre la magia</h3>
-        <p>Al instante, tu piel transmite lo que tú decidiste mostrar en ese preciso momento. Una foto. Un video. Una historia. Un secreto.</p>
-        <div class="stag">Sin app · directo al móvil</div>
+        <h3 data-i18n="steps.step2.title">Descubre la magia</h3>
+        <p data-i18n="steps.step2.desc">Al instante, tu piel transmite lo que tú decidiste mostrar en ese preciso momento. Una foto. Un video. Una historia. Un secreto.</p>
+        <div class="stag" data-i18n="steps.step2.stag">Sin app · directo al móvil</div>
       </div>
       <div class="step">
         <div class="sn">0<em>3</em></div>
-        <h3>Evoluciona cuando quieras</h3>
-        <p>¿Cambiaste de canal? ¿Quieres mostrar el video de tu último viaje? Lo actualizas en segundos desde el panel. Sin dolor. Sin láser. Sin arrepentimientos.</p>
-        <div class="stag">Panel · infinito</div>
+        <h3 data-i18n="steps.step3.title">Evoluciona cuando quieras</h3>
+        <p data-i18n="steps.step3.desc">¿Cambiaste de canal? ¿Quieres mostrar el video de tu último viaje? Lo actualizas en segundos desde el panel. Sin dolor. Sin láser. Sin arrepentimientos.</p>
+        <div class="stag" data-i18n="steps.step3.stag">Panel · infinito</div>
       </div>
     </div>
   </div>
@@ -289,26 +289,26 @@
 <section class="benefits" id="beneficios" data-theme="char">
   <div class="wrap">
     <div class="sec-head">
-      <div class="idx">03 <span class="ruby">/</span> Por qué cambia todo</div>
-      <h2>Un tatuaje. <em>Tres libertades</em><br/>que nadie te había dado antes.</h2>
+      <div class="idx">03 <span class="ruby">/</span> <span data-i18n="benefits.idx">Por qué cambia todo</span></div>
+      <h2 data-i18n-html="benefits.title">Un tatuaje. <em>Tres libertades</em><br/>que nadie te había dado antes.</h2>
     </div>
     <div class="benefits-grid">
       <div class="benefit">
-        <div class="bn">Beneficio 01</div>
-        <h3>Libertad <em>absoluta</em></h3>
-        <p>Transforma el significado de tu tatuaje las veces que quieras. Hoy tu portfolio, mañana tu nuevo proyecto, pasado un recuerdo privado. Tu mente es el único límite.</p>
+        <div class="bn" data-i18n="benefits.benefit1.badge">Beneficio 01</div>
+        <h3 data-i18n-html="benefits.benefit1.title">Libertad <em>absoluta</em></h3>
+        <p data-i18n="benefits.benefit1.desc">Transforma el significado de tu tatuaje las veces que quieras. Hoy tu portfolio, mañana tu nuevo proyecto, pasado un recuerdo privado. Tu mente es el único límite.</p>
         <div class="mark">∞</div>
       </div>
       <div class="benefit">
-        <div class="bn">Beneficio 02</div>
-        <h3>Redirección <em>permanente</em></h3>
-        <p>Olvídate de los enlaces rotos. Si cambia tu Instagram, mudas tus videos o reformas tu web, tu tatuaje seguirá funcionando perfectamente. De por vida.</p>
+        <div class="bn" data-i18n="benefits.benefit2.badge">Beneficio 02</div>
+        <h3 data-i18n-html="benefits.benefit2.title">Redirección <em>permanente</em></h3>
+        <p data-i18n="benefits.benefit2.desc">Olvídate de los enlaces rotos. Si cambia tu Instagram, mudas tus videos o reformas tu web, tu tatuaje seguirá funcionando perfectamente. De por vida.</p>
         <div class="mark">∞→</div>
       </div>
       <div class="benefit">
-        <div class="bn">Beneficio 03</div>
-        <h3>Estética <em>impecable</em></h3>
-        <p>Diseñado junto a tatuadores profesionales en Negro Tinta y Rojo Pulso. Una pieza de arte minimalista, tecnológica y profundamente atractiva.</p>
+        <div class="bn" data-i18n="benefits.benefit3.badge">Beneficio 03</div>
+        <h3 data-i18n-html="benefits.benefit3.title">Estética <em>impecable</em></h3>
+        <p data-i18n="benefits.benefit3.desc">Diseñado junto a tatuadores profesionales en Negro Tinta y Rojo Pulso. Una pieza de arte minimalista, tecnológica y profundamente atractiva.</p>
         <div class="mark">▲</div>
       </div>
     </div>
@@ -319,34 +319,34 @@
 <section class="specs" id="tecnico" data-theme="bone">
   <div class="wrap">
     <div class="sec-head">
-      <div class="idx">04 <span class="ruby">/</span> Técnico & seguridad</div>
-      <h2>Validado por<br/><em>profesionales</em> del tatuaje.</h2>
+      <div class="idx">04 <span class="ruby">/</span> <span data-i18n="specs.idx">Técnico & seguridad</span></div>
+      <h2 data-i18n-html="specs.title">Validado por<br/><em>profesionales</em> del tatuaje.</h2>
     </div>
     <div style="height:30px"></div>
-    <p style="max-width:680px;font-size:17px;line-height:1.55;opacity:.82;margin:0 0 30px">
+    <p data-i18n-html="specs.lede" style="max-width:680px;font-size:17px;line-height:1.55;opacity:.82;margin:0 0 30px">
       Sabemos que tu piel es sagrada. Por eso no dejamos nada al azar — dimensiones, módulo, contraste y zonas verificadas con tatuadores que trabajan línea fina todos los días.
     </p>
     <div class="specs-grid">
       <div class="spec-card">
         <div class="spec-row">
-          <div class="k">Dimensión</div>
-          <div class="v">4 × 4 cm <small>Estándar validado · pruebas en curso a 3 × 3 cm sin perder escaneabilidad</small></div>
+          <div class="k" data-i18n="specs.k.dimension.label">Dimensión</div>
+          <div class="v">4 × 4 cm <small data-i18n="specs.k.dimension.note">Estándar validado · pruebas en curso a 3 × 3 cm sin perder escaneabilidad</small></div>
         </div>
         <div class="spec-row">
-          <div class="k">Módulo</div>
-          <div class="v">≥ 1.2 mm <small>Tamaño mínimo de cada celda para tinta saturada y borde nítido</small></div>
+          <div class="k" data-i18n="specs.k.module.label">Módulo</div>
+          <div class="v">≥ 1.2 mm <small data-i18n="specs.k.module.note">Tamaño mínimo de cada celda para tinta saturada y borde nítido</small></div>
         </div>
         <div class="spec-row">
-          <div class="k">Contraste</div>
-          <div class="v">Tinta negra plena <small>Sin sombreado · sin degradado · fondo libre de tatuajes previos</small></div>
+          <div class="k" data-i18n="specs.k.contrast.label">Contraste</div>
+          <div class="v">Tinta negra plena <small data-i18n="specs.k.contrast.note">Sin sombreado · sin degradado · fondo libre de tatuajes previos</small></div>
         </div>
         <div class="spec-row">
-          <div class="k">Corrección de error</div>
-          <div class="v">Nivel H (30%) <small>Tolera retoques, cicatrización y envejecimiento de la piel</small></div>
+          <div class="k" data-i18n="specs.k.error.label">Corrección de error</div>
+          <div class="v">Nivel H (30%) <small data-i18n="specs.k.error.note">Tolera retoques, cicatrización y envejecimiento de la piel</small></div>
         </div>
         <div class="spec-row">
-          <div class="k">Garantía</div>
-          <div class="v">URL bajo tu control <small>Mientras el QR esté bien tatuado, la redirección siempre es tuya</small></div>
+          <div class="k" data-i18n="specs.k.guarantee.label">Garantía</div>
+          <div class="v">URL bajo tu control <small data-i18n="specs.k.guarantee.note">Mientras el QR esté bien tatuado, la redirección siempre es tuya</small></div>
         </div>
       </div>
 

@@ -18,6 +18,42 @@
     "item4":"Your skin · your channel",
     "item5":"4 × 4 cm validated"
   },
+  "steps":{
+    "idx":"How it works",
+    "title":"Your life in motion,<br/>direct to your <em>skin</em>.",
+    "step1":{"title":"Scan the art","desc":"Anyone can bring their smartphone close to your tattoo. Designed under strict artistic standards: clean line, full contrast, instant readability.","stag":"1 second · any camera"},
+    "step2":{"title":"Discover the magic","desc":"Instantly your skin transmits what you decided to show at that precise moment. A photo. A video. A story. A secret.","stag":"No app · direct to phone"},
+    "step3":{"title":"Evolve whenever you want","desc":"Changed channels? Want to show the video of your latest trip? Update it in seconds from the panel. No pain. No laser. No regrets.","stag":"Panel · infinite"}
+  },
+  "benefits":{
+    "idx":"Why it changes everything",
+    "title":"One tattoo. <em>Three freedoms</em><br/>no one gave you before.",
+    "benefit1":{"badge":"Benefit 01","title":"Absolute <em>freedom</em>","desc":"Transform the meaning of your tattoo as many times as you like. Today your portfolio, tomorrow your new project, then a private memory. Your mind is the only limit."},
+    "benefit2":{"badge":"Benefit 02","title":"Permanent <em>redirection</em>","desc":"Forget broken links. If your Instagram changes, you move your videos or rebuild your site, your tattoo will keep working perfectly. For life."},
+    "benefit3":{"badge":"Benefit 03","title":"Impeccable <em>aesthetics</em>","desc":"Designed with professional tattoo artists for a minimal, technological and deeply attractive piece."}
+  },
+  "specs":{
+    "idx":"Technical & safety",
+    "title":"Validated by<br/><em>professional</em> tattoo artists.",
+    "lede":"We know your skin is sacred. That's why we leave nothing to chance — dimensions, module, contrast and zones verified with tattooers who work fine line every day.",
+    "k":{"dimension":{"label":"Dimension","note":"4 × 4 cm · Standard validated · tests underway at 3 × 3 cm without losing readability"},"module":{"label":"Module","note":"≥ 1.2 mm · Minimum cell size for saturated ink and sharp border"},"contrast":{"label":"Contrast","note":"Full black ink · No shading · No gradient · background free of previous tattoos"},"error":{"label":"Error correction","note":"Level H (30%) · Tolerates touch-ups, scarring and skin aging"},"guarantee":{"label":"Guarantee","note":"URL under your control · While the QR is well tattooed, the redirect is always yours"}}
+  },
+  "problem":{
+    "idx":"The problem",
+    "title":"The world is evolving.<br/>Why should your skin<br/>have to <em>stay behind</em>?",
+    "lede":"Until now, getting a tattoo meant making a <em>static</em> decision for life. A name. A phase. A social profile that defines you today and is only a memory tomorrow.",
+    "card1":{"title":"Endless laser sessions","desc":"Months of pain, irritation and half-promises. Expensive, slow, and rarely complete."},
+    "card2":{"title":"A bigger, darker cover-up","desc":"Cover with more ink. Accept a design you didn't choose just to hide the previous one."},
+    "card3":{"title":"Living with regret","desc":"Looking at the mirror every morning and remembering someone — or something — you're no longer."},
+    "kicker":"That's over."
+  },
+  "demo":{
+    "idx":"The solution",
+    "title":"One tattoo.<br/>A thousand <em>destinations</em>.",
+    "lede1":"Your tattoo doesn't change. What changes is <strong>where it points</strong>.",
+    "lede2":"When someone scans your QR with the camera, we send them to the URL you choose <strong>in that moment</strong>: your portfolio, a video, your Instagram, a private landing. And you change it as many times as you want from your panel — in seconds, without returning to the studio.",
+    "eyebrow":"Tap an option <span class=\"ruby\">·</span> watch the screen"
+  },
   "btn":{
     "primary":"Get your Dynamic Tattoo",
     "ghost":"See how it works"
@@ -54,6 +90,40 @@
   "footer":{
     "madeby":"Made with ❤️ by Orbitatecnologica",
     "copyright":"© 2026 Dynamic Tattoos · Registered trademark"
+    ,"closingBadge":"The close",
+    "closingTitle":"At Dynamic Tattoos,<br/>we've made it <em>for you</em>.",
+    "closingLede":"Don't settle for a static canvas. It's time your body art moved with your experiences. <strong>Your story starts here. Make it dynamic.</strong>",
+    "cta":{
+      "primary":"Get your Dynamic Tattoo",
+      "contact":"Contact us"
+    },
+    "col":{
+      "product":{
+        "label":"Product",
+        "demo":"Live demo",
+        "how":"How it works",
+        "tech":"Technical",
+        "plans":"Plans"
+      },
+      "support":{
+        "label":"Support",
+        "faq":"FAQ",
+        "studios":"Partner studios",
+        "guide":"Technical guide",
+        "contact":"Contact"
+      },
+      "legal":{
+        "label":"Legal",
+        "terms":"Terms",
+        "privacy":"Privacy",
+        "cookies":"Cookies"
+      }
+    },
+    "social":{
+      "instagram":{ "aria":"Instagram (Instagram homepage)" },
+      "facebook":{ "aria":"Facebook (Facebook homepage)" },
+      "tiktok":{ "aria":"TikTok (TikTok homepage)" }
+    }
   },
   "legal":{
     "section":"Legal",
