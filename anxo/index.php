@@ -1049,11 +1049,23 @@ window.__pickHeroVideo = function(){
   function imgFor(key){
     return (window.__destImages && window.__destImages[key]) || fallback[key];
   }
+  // lightweight lookup into loaded translations
+  function L(key, fallback){
+    try{
+      if(window && window.DT_I18N){
+        const parts = key.split('.');
+        let o = window.DT_I18N;
+        for(const p of parts){ if(o && (p in o)) o = o[p]; else { o = undefined; break; } }
+        if(o !== undefined && o !== null) return o;
+      }
+    }catch(e){}
+    return fallback;
+  }
   const map = {
-    portfolio:{title:'Tu web <em>profesional</em>', icon:'¶', url:'portfolio.miestudio.com', label:'DESTINO ACTUAL · WEB'},
-    instagram:{title:'Tu red social <em>favorita</em>', icon:'@', url:'instagram.com/aria.ink', label:'DESTINO ACTUAL · RED SOCIAL'},
-    video:{title:'Un video <em>privado</em>', icon:'▶', url:'dyn.tt/u/aria/baile-2026', label:'DESTINO ACTUAL · VIDEO'},
-    profile:{title:'Tu página <em>Dynamic</em>', icon:'❍', url:'dyn.tt/aria', label:'DESTINO ACTUAL · PERFIL'},
+    portfolio:{title: L('tweaks.dest.portfolio.title','Tu web <em>profesional</em>'), icon:'¶', url: L('tweaks.dest.portfolio.url','portfolio.miestudio.com'), label: L('tweaks.dest.portfolio.label','DESTINO ACTUAL · WEB')},
+    instagram:{title: L('tweaks.dest.instagram.title','Tu red social <em>favorita</em>'), icon:'@', url: L('tweaks.dest.instagram.url','instagram.com/aria.ink'), label: L('tweaks.dest.instagram.label','DESTINO ACTUAL · RED SOCIAL')},
+    video:{title: L('tweaks.dest.video.title','Un video <em>privado</em>'), icon:'▶', url: L('tweaks.dest.video.url','dyn.tt/u/aria/baile-2026'), label: L('tweaks.dest.video.label','DESTINO ACTUAL · VIDEO')},
+    profile:{title: L('tweaks.dest.profile.title','Tu página <em>Dynamic</em>'), icon:'❍', url: L('tweaks.dest.profile.url','dyn.tt/aria'), label: L('tweaks.dest.profile.label','DESTINO ACTUAL · PERFIL')},
   };
   const frameImg = document.getElementById('frameImg');
   const frameMedia = document.getElementById('frameMedia');
@@ -1081,10 +1093,10 @@ window.__pickHeroVideo = function(){
     dests.forEach(x=>x.classList.toggle('active', x.dataset.key===key));
     const m = map[key];
     if(!m) return;
-    document.getElementById('frameTitle').innerHTML = m.title;
+    document.getElementById('frameTitle').innerHTML = L('tweaks.dest.'+key+'.title', m.title);
     document.getElementById('frameIcon').textContent = m.icon;
-    document.getElementById('frameUrl').textContent = m.url;
-    document.getElementById('frameLabel').textContent = m.label;
+    document.getElementById('frameUrl').textContent = L('tweaks.dest.'+key+'.url', m.url);
+    document.getElementById('frameLabel').textContent = L('tweaks.dest.'+key+'.label', m.label);
     applyImage(key);
   }
   window.__activateDest = activate;
@@ -1093,19 +1105,22 @@ window.__pickHeroVideo = function(){
     d.addEventListener('click',()=>activate(d.dataset.key));
   });
   activate('portfolio');
+  // Re-apply translated labels when i18n data becomes available or language changes
+  window.addEventListener('dt:i18n:loaded', ()=>{ setTimeout(()=>activate(currentKey), 30); });
+  window.addEventListener('dt:langchange', ()=>{ setTimeout(()=>activate(currentKey), 30); });
 })();
 
 /* ============= Body zones — interactive map with details ============= */
 (function(){
   const zoneData = {
-    forearm:{name:'Antebrazo interno', status:'optimal', statusLabel:'Óptimo', curv:'Plana', move:'Bajo', heal:'3-4 sem.', vis:'Alta', ink:'≥ 1.2 mm', note:'Una de las zonas más usadas para QR dinámico. Piel firme, lectura perfecta a cualquier ángulo.'},
-    biceps:{name:'Bíceps exterior', status:'optimal', statusLabel:'Óptimo', curv:'Leve', move:'Bajo', heal:'3-4 sem.', vis:'Media', ink:'≥ 1.2 mm', note:'Superficie amplia, contraste sólido. Ideal para QR de 4×4 cm.'},
-    calf:{name:'Pantorrilla', status:'optimal', statusLabel:'Óptimo', curv:'Leve', move:'Bajo', heal:'4-5 sem.', vis:'Media', ink:'≥ 1.2 mm', note:'Zona estable con buen retorno cromático. Recomendado en parte exterior.'},
-    chest:{name:'Pectoral', status:'good', statusLabel:'Bueno', curv:'Leve', move:'Medio', heal:'4-5 sem.', vis:'Privada', ink:'≥ 1.3 mm', note:'Visibilidad bajo demanda. Requiere placado en zona alta para evitar distorsión.'},
-    shoulder:{name:'Hombro · escápula', status:'optimal', statusLabel:'Óptimo', curv:'Leve', move:'Bajo', heal:'3-4 sem.', vis:'Alta', ink:'≥ 1.2 mm', note:'Superficie plana sobre el omóplato. Excelente para escaneo lateral.'},
-    back:{name:'Espalda baja', status:'optimal', statusLabel:'Óptimo', curv:'Plana', move:'Bajo', heal:'4 sem.', vis:'Privada', ink:'≥ 1.2 mm', note:'Lienzo amplio y estable. Ideal si buscas un QR discreto pero perfecto.'},
-    wrist:{name:'Muñeca', status:'warn', statusLabel:'Supervisar', curv:'Alta', move:'Alto', heal:'5-6 sem.', vis:'Alta', ink:'≥ 1.4 mm', note:'La curvatura puede distorsionar la lectura. Aceptable solo si se valida con plantilla previa.'},
-    ribs:{name:'Costillas', status:'warn', statusLabel:'Supervisar', curv:'Media', move:'Alto', heal:'5-6 sem.', vis:'Privada', ink:'≥ 1.4 mm', note:'Piel fina y mucho movimiento respiratorio. Recomendado solo a tatuadores experimentados.'},
+    forearm:{name: L('specs.zones.forearm.name','Antebrazo interno'), status:'optimal', statusLabel: L('specs.zones.forearm.statusLabel','Óptimo'), curv: L('specs.zones.forearm.curv','Plana'), move: L('specs.zones.forearm.move','Bajo'), heal: L('specs.zones.forearm.heal','3-4 sem.'), vis: L('specs.zones.forearm.vis','Alta'), ink: L('specs.zones.forearm.ink','≥ 1.2 mm'), note: L('specs.zones.forearm.note','Una de las zonas más usadas para QR dinámico. Piel firme, lectura perfecta a cualquier ángulo.')},
+    biceps:{name: L('specs.zones.biceps.name','Bíceps exterior'), status:'optimal', statusLabel: L('specs.zones.biceps.statusLabel','Óptimo'), curv: L('specs.zones.biceps.curv','Leve'), move: L('specs.zones.biceps.move','Bajo'), heal: L('specs.zones.biceps.heal','3-4 sem.'), vis: L('specs.zones.biceps.vis','Media'), ink: L('specs.zones.biceps.ink','≥ 1.2 mm'), note: L('specs.zones.biceps.note','Superficie amplia, contraste sólido. Ideal para QR de 4×4 cm.')},
+    calf:{name: L('specs.zones.calf.name','Pantorrilla'), status:'optimal', statusLabel: L('specs.zones.calf.statusLabel','Óptimo'), curv: L('specs.zones.calf.curv','Leve'), move: L('specs.zones.calf.move','Bajo'), heal: L('specs.zones.calf.heal','4-5 sem.'), vis: L('specs.zones.calf.vis','Media'), ink: L('specs.zones.calf.ink','≥ 1.2 mm'), note: L('specs.zones.calf.note','Zona estable con buen retorno cromático. Recomendado en parte exterior.')},
+    chest:{name: L('specs.zones.chest.name','Pectoral'), status:'good', statusLabel: L('specs.zones.chest.statusLabel','Bueno'), curv: L('specs.zones.chest.curv','Leve'), move: L('specs.zones.chest.move','Medio'), heal: L('specs.zones.chest.heal','4-5 sem.'), vis: L('specs.zones.chest.vis','Privada'), ink: L('specs.zones.chest.ink','≥ 1.3 mm'), note: L('specs.zones.chest.note','Visibilidad bajo demanda. Requiere placado en zona alta para evitar distorsión.')},
+    shoulder:{name: L('specs.zones.shoulder.name','Hombro · escápula'), status:'optimal', statusLabel: L('specs.zones.shoulder.statusLabel','Óptimo'), curv: L('specs.zones.shoulder.curv','Leve'), move: L('specs.zones.shoulder.move','Bajo'), heal: L('specs.zones.shoulder.heal','3-4 sem.'), vis: L('specs.zones.shoulder.vis','Alta'), ink: L('specs.zones.shoulder.ink','≥ 1.2 mm'), note: L('specs.zones.shoulder.note','Superficie plana sobre el omóplato. Excelente para escaneo lateral.')},
+    back:{name: L('specs.zones.back.name','Espalda baja'), status:'optimal', statusLabel: L('specs.zones.back.statusLabel','Óptimo'), curv: L('specs.zones.back.curv','Plana'), move: L('specs.zones.back.move','Bajo'), heal: L('specs.zones.back.heal','4 sem.'), vis: L('specs.zones.back.vis','Privada'), ink: L('specs.zones.back.ink','≥ 1.2 mm'), note: L('specs.zones.back.note','Lienzo amplio y estable. Ideal si buscas un QR discreto pero perfecto.')},
+    wrist:{name: L('specs.zones.wrist.name','Muñeca'), status:'warn', statusLabel: L('specs.zones.wrist.statusLabel','Supervisar'), curv: L('specs.zones.wrist.curv','Alta'), move: L('specs.zones.wrist.move','Alto'), heal: L('specs.zones.wrist.heal','5-6 sem.'), vis: L('specs.zones.wrist.vis','Alta'), ink: L('specs.zones.wrist.ink','≥ 1.4 mm'), note: L('specs.zones.wrist.note','La curvatura puede distorsionar la lectura. Aceptable solo si se valida con plantilla previa.')},
+    ribs:{name: L('specs.zones.ribs.name','Costillas'), status:'warn', statusLabel: L('specs.zones.ribs.statusLabel','Supervisar'), curv: L('specs.zones.ribs.curv','Media'), move: L('specs.zones.ribs.move','Alto'), heal: L('specs.zones.ribs.heal','5-6 sem.'), vis: L('specs.zones.ribs.vis','Privada'), ink: L('specs.zones.ribs.ink','≥ 1.4 mm'), note: L('specs.zones.ribs.note','Piel fina y mucho movimiento respiratorio. Recomendado solo a tatuadores experimentados.')},
   };
 
   const detailEls = {
@@ -1124,15 +1139,17 @@ window.__pickHeroVideo = function(){
   function updateDetail(zone){
     const d = zoneData[zone];
     if(!d || !detailEls.name) return;
-    detailEls.name.textContent = d.name;
-    detailEls.status.textContent = d.statusLabel;
-    detailEls.status.className = 'bz-detail-status ' + d.status;
-    detailEls.curv.textContent = d.curv;
-    detailEls.move.textContent = d.move;
-    detailEls.heal.textContent = d.heal;
-    detailEls.vis.textContent = d.vis;
-    detailEls.ink.textContent = d.ink;
-    detailEls.note.textContent = d.note;
+    detailEls.name.textContent = L(`specs.zones.${zone}.name`, d.name || '');
+    const statusLabel = L(`specs.zones.${zone}.statusLabel`, d.statusLabel || '');
+    detailEls.status.textContent = statusLabel;
+    detailEls.status.className = 'bz-detail-status ' + (d.status || '');
+    detailEls.curv.textContent = L(`specs.zones.${zone}.curv`, d.curv || '');
+    detailEls.move.textContent = L(`specs.zones.${zone}.move`, d.move || '');
+    detailEls.heal.textContent = L(`specs.zones.${zone}.heal`, d.heal || '');
+    detailEls.vis.textContent = L(`specs.zones.${zone}.vis`, d.vis || '');
+    detailEls.ink.textContent = L(`specs.zones.${zone}.ink`, d.ink || '');
+    const note = L(`specs.zones.${zone}.note`, d.note || '');
+    try{ detailEls.note.innerHTML = note; }catch(e){ detailEls.note.textContent = note; }
   }
 
   function moveCrosshair(zone){
